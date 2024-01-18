@@ -22,10 +22,9 @@ export default function AboutMe() {
                         src={Prashan1}
                         layout="fill"
                         objectFit="cover"
-                        objectPosition="center"
-                        alt="Prashan playing the trumpet" // Always include an 'alt' attribute for accessibility reasons
-                        // priority={true} // Uncomment if this is the LCP element
-                    />
+                        objectPosition="50% 0%"
+                        alt="Prashan playing the trumpet"
+                        />
                 </div>
             </div>
         </section>
