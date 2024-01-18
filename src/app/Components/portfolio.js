@@ -31,6 +31,7 @@ export default function Portfolio() {
                 layout="fill"
                 objectFit="cover"
                 objectPosition="50% 0%"
+                alt="Portfolio Image 3"
             />
             </div>
             <div>
@@ -47,6 +48,7 @@ export default function Portfolio() {
                 layout="fill"
                 objectFit="cover"
                 objectPosition="50% 0%"
+                alt="Portfolio Image 12"
             />
             </div>
             <div className="relative w-full h-full transform transition-transform duration-500 ease-in-out hover:scale-105">
@@ -56,6 +58,7 @@ export default function Portfolio() {
                 layout="fill"
                 objectFit="cover"
                 objectPosition="50% 0%"
+                alt="Portfolio Image 13"
             />
             </div>
         </div>
