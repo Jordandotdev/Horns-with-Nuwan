@@ -3,7 +3,7 @@ import GetInTouch from './Components/getInTouch.js';
 import Portfolio from './Components/portfolio.js';
 import Hero from './Components/hero.js';
 import Footer from "./Components/footer.js";
-// import About from "./Components/about.js";
+import About from "./Components/about.js";
 
 export default function Home() {
   return (    
@@ -14,7 +14,7 @@ export default function Home() {
       <Hero/>
       <GetInTouch/>
       <Portfolio/>
-      {/* <About/> */}
+      <About/>
       <Footer/>
 
   </div>
