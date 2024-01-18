@@ -2,12 +2,6 @@ import Image from 'next/image';
 import Prashan1 from "../../../public/jpg1.jpg";
 
 export default function AboutMe() {
-    // It's important to add the 'alt' attribute for accessibility reasons
-    // Since the 'layout' prop is set to 'fill', the image will stretch to fill the container while preserving its aspect ratio
-    // The 'objectFit' prop set to 'cover' will ensure that the image covers the area of the container without stretching or squashing
-    // The 'objectPosition' prop can be adjusted if you need to change how the image is framed within the container
-    // Consider adding a 'priority' prop if this image is the Largest Contentful Paint (LCP) element on the page
-
     return (
         <section className="bg-white dark:bg-gray-900">
             <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">

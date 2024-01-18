@@ -3,11 +3,6 @@ import Prashan1 from '../../../public/jpg1.jpg';
 import Prashan2 from '../../../public/jpg2.jpg';
 
 export default function GetInTouch() {
-  // Ensure that the parent container of the images defines their aspect ratio correctly
-  // The 'aspect-w-16' and 'aspect-h-9' classes should maintain a 16:9 aspect ratio
-  // Adjust the quality of the images as needed using the `quality` prop
-  // You can use the `priority` prop for critical images that need to load immediately
-
   return (
     <section className="bg-white dark:bg-gray-900">
       <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
