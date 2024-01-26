@@ -8,11 +8,11 @@ import About from "./Components/about.js";
 export default function Home() {
   return (    
 
-  <div>
+  <div className='bg-white'>
       <Hero/>
-      <GetInTouch/>
-      <Portfolio/>
       <About/>
+      <Portfolio/>
+      <GetInTouch/>
   </div>
   )
 }
