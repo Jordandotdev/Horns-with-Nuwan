@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-import { Inter } from 'next/font/google'
-import './globals.css'
-import Footer from "./Components/footer.js";
-import Nav from '../app/Components/nav.client.js';
-=======
+
 import { Inter } from 'next/font/google';
 import './globals.css';
-import Footer from "./Components/footerComponent.js";
-import Nav from './Components/navComponent.js';
->>>>>>> 17295d758b39e5ccd76bc4500938a014e502d586
+import Footer from "./Components/footer.client.js";
+import Nav from './Components/nav.client.js';
+
 
 const inter = Inter({ subsets: ['latin'] });
 
