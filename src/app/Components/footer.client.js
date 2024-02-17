@@ -12,16 +12,16 @@ export default function Footer(){
                     </a>
                     <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                         <li>
-                            <a href="#" className="hover:underline me-4 md:me-6">Home</a>
+                            <a href="/" className="hover:underline me-4 md:me-6">Home</a>
                         </li>
                         <li>
-                            <a href="#" className="hover:underline me-4 md:me-6">About Me</a>
+                            <a href="/about-me" className="hover:underline me-4 md:me-6">About Me</a>
                         </li>
                         <li>
-                            <a href="#" className="hover:underline me-4 md:me-6">Expeditions</a>
+                            <a href="/expedition" className="hover:underline me-4 md:me-6">Expeditions</a>
                         </li>
                         <li>
-                            <a href="#" className="hover:underline">Portfolio</a>
+                            <a href="/portfolio" className="hover:underline">Portfolio</a>
                         </li>
                     </ul>
                 </div>
