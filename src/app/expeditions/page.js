@@ -1,9 +1,9 @@
-export default function Portfolio({ pageValue }) {
+export default function ExpedtionsHome({ pageValue }) {
   console.log(`Page Value: ${pageValue}`);
   
   return (
     <div>
-      <h1>Portfolio</h1>
+      <h1>Expeditions</h1>
     </div>
   )
 }

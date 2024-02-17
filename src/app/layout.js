@@ -10,16 +10,36 @@ export const metadata = {
   description: 'Welcome to my personal website!',
 }
 
-export default function RootLayout({ children }) {
-  return (
-    <html lang="en">
-      
-      <body className={inter.className}>
-      <Nav/>
-        <main>{children}</main>
-      <Footer/>
-      </body>
-      
-    </html>
-  )
+function getPageValue(pageName) {
+  let value;
+  switch(pageName) {
+     case 'home':
+       value = 1;
+       break;
+     case 'portfolio':
+       value = 2;
+       break;
+     case 'contact':
+       value = 3;
+       break;
+     default:
+       value = 1;
+  }
+  console.log(`Page Name: ${pageName}, Page Value: ${value}`);
+  return value;
 }
+
+ export default function RootLayout({ children, pageName }) {
+  const pageValue = getPageValue(pageName);
+  return (
+     <html lang="en">
+       <body className={inter.className}>
+         <Nav pageValue={pageValue}/>
+         <main>{children}</main>
+         <Footer/>
+       </body>
+     </html>
+  )
+ }
+
+
