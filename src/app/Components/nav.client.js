@@ -32,9 +32,9 @@ export default function Nav() {
   ]
   const pathname = usePathname();
   return (
-<nav className="bg-white relative top-0 w-full z-50">
+<nav className=" fixed top-0 w-full z-50">
   <div className="max-w-screen-xl flex flex-wrap justify-center items-center mx-auto p-4">
-   <ul className='flex gap-2'>
+   <ul className='flex gap-2 bg-white p-3 rounded-lg shadow-lg'>
     {links.map(link => {
       return(
         <li key={link.path}>
