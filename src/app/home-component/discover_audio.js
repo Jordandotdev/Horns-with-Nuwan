@@ -1,4 +1,4 @@
-import AudioPlayer from "./audio_player";
+import AudioPlayer from "./components/audio_player.js";
 
 export default function discover_audio() {
     return (
