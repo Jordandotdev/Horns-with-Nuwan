@@ -4,6 +4,16 @@
  
 @layer base {
   :root {
+
+    /* colors */
+    --gold: #CEAA54;
+    .text-gold {
+      color: var(--gold);
+    };
+    .bg-gold {
+      background-color: var(--gold);
+    };
+
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
 

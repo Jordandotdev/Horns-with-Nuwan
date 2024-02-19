@@ -5,6 +5,7 @@ import Footer from "./Components/footer.client.js";
 import Nav from './Components/nav.client.js';
 
 
+
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {

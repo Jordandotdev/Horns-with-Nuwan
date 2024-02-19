@@ -1,18 +1,13 @@
-
-import GetInTouch from './Components/getInTouch.js';
-import Portfolio from './Components/portfolio.js';
 import Hero from './home-component/hero.js';
-
-import About from "./Components/about.js";
+import Majestic from './home-component/majestic_horns.js';
+import Audio from './home-component/discover_audio.js';
 
 export default function Home() {
   return (    
-
   <div className='bg-white'>
       <Hero/>
-      <About/>
-      <Portfolio/>
-      <GetInTouch/>
+      <Audio/>
+      <Majestic/>
   </div>
   )
 }
