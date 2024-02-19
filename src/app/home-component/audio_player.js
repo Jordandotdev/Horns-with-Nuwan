@@ -16,7 +16,7 @@ const AudioPlayer = () => {
                        Mystique Forest 2 
                     </span>
                     <span className="text-xs text-gray-500 uppercase font-medium ">
-                        -"Boston," Augustana
+                        -&quot;Boston,&quot; Augustana
                     </span>
                 </div>
             </div>
@@ -70,7 +70,7 @@ const AudioPlayer = () => {
                         Mystique Forest 2    
                         </span>
                         <span className="text-xs text-gray-500 uppercase font-medium ">
-                            -"Boston," Augustana
+                            -&quot;Boston,&quot; Augustana
                         </span>
                     </div>
                 </div>
@@ -82,7 +82,7 @@ const AudioPlayer = () => {
                         Mystique Forest 2    
                         </span>
                         <span className="text-xs text-gray-500 uppercase font-medium ">
-                            -"Boston," Augustana
+                            -&quot;Boston,&quot; Augustana
                         </span>
                     </div>
                 </div>
