@@ -1,5 +1,7 @@
 import Image from 'next/image';
 import Prashan1 from '../../../public/jpg1.jpg';
+import { Button } from "../Components/ui/button.jsx"
+
 
 export default function expeditions() {
 return(
@@ -19,7 +21,9 @@ return(
             <h2 className="mb-4 text-4xl tracking-tight font-extrabold text-gray-900 dark:text-white">Expeditions</h2>
             <p className="mb-4">We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.</p>
             <p>We are strategists, designers and developers. Innovators and problem solvers. Small enough to be simple and quick.</p>
-            
+            <a href='/portfolio'>
+            <Button className="mt-4" >View More</Button>
+            </a>
             </div>
         </div>
     </section>
