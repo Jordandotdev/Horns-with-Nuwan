@@ -11,7 +11,7 @@ export default function Nav() {
     },
     {
       path: '/about-me',
-      name: 'About Me',
+      name: 'Self Portrait',
     },
     {
       path: '/expeditions',

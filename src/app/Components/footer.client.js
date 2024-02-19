@@ -13,7 +13,7 @@ export default function Footer(){
                             <a href="/" className="hover:underline me-4 md:me-6">Home</a>
                         </li>
                         <li>
-                            <a href="/about-me" className="hover:underline me-4 md:me-6">About Me</a>
+                            <a href="/about-me" className="hover:underline me-4 md:me-6">Self Portrait</a>
                         </li>
                         <li>
                             <a href="/expedition" className="hover:underline me-4 md:me-6">Expeditions</a>
