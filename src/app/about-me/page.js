@@ -1,9 +1,15 @@
+import Portrait from './portrait.js';
+import Educator from './educator.js';
+
 export default function AboutMeHome({ pageValue }) {
   console.log(`Page Value: ${pageValue}`);
   
   return (
     <div>
-      <h1>About Me</h1>
+      <section>
+        <Portrait/>
+        <Educator/>
+      </section>
     </div>
   )
 }
