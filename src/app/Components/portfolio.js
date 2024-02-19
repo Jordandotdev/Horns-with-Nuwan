@@ -5,7 +5,7 @@ import Prashan2 from "../../../public/jpg2.jpg";
 
 export default function Portfolio() {
     return (
-        <div className="item-center bg-white">
+        <div id="main_port" className="item-center bg-white">
            <div className=" flex justify-center  mb-4 text-4xl p-24  items-center py-8 px-4 mx-auto max-w-screen-xl font-extrabold text-gray-900 dark:text-white">
             Portfolio 
            </div> 
