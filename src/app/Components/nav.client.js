@@ -22,11 +22,11 @@ export default function Nav() {
       name: 'Portfolio',
     },
     {
-      path: '#',
+      path: '/#Majestic',
       name: 'Majestic Horns',
     },
     {
-      path: '#',
+      path: '#Footer',
       name: 'Reach Out',
     },
   ]

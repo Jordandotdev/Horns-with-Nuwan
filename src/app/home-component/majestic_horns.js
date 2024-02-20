@@ -5,7 +5,7 @@ import Prashan2 from '../../../public/jpg2.jpg';
 export default function majestic_horns() {
     return (
         <div>
-            <section className="bg-white px-4 py-8">
+            <section id="Majestic" className="bg-white px-4 py-8">
             <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"> 
                     <div>
                     <div className="grid grid-cols-2 gap-4 mt-8">
