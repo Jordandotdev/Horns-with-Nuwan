@@ -1,9 +1,12 @@
-export default function Portfolio({ pageValue }) {
-  console.log(`Page Value: ${pageValue}`);
+import DataTable from "./datatable";
+
+
+export default function Portfolio() {
   
   return (
-    <div>
-      <h1>Portfolio</h1>
-    </div>
+    <section className="mt-14 bg-white px-4 py-4">
+      <h2>This is theprojects page</h2>
+      <DataTable />
+    </section>
   )
 }

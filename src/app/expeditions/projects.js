@@ -7,8 +7,8 @@ export default function projects() {
     return(
         <section>
             <div id="main_port" className="item-center bg-white">
-           <div className=" flex justify-center  mb-4 text-4xl p-24  items-center py-8 px-4 mx-auto max-w-screen-xl font-extrabold text-gray-900 dark:text-white">
-            Portfolio 
+           <div className=" flex   mb-4 text-5xl items-center pt-6 px-4 mx-auto max-w-screen-xl font-extrabold text-gray-900 dark:text-white">
+           Exploratory Projects 
            </div> 
          <div className="grid grid-cols-2 md:grid-cols-3 gap-4   items-center py-4 px-4 mx-auto max-w-screen-xl">
             <div>

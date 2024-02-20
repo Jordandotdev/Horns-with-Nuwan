@@ -43,12 +43,12 @@ export default function majestic_horns() {
                             We are strategists, designers and developers.
                              Innovators and problem solvers. Small enough to be simple and quick.
                         </p>
-                        <div className='flex gap-4 mt-8 space-x-4 lg:justify-start md:justify-start sm:justify-center' alt='Social-Icons'>
+                        <div className='flex mt-8 space-x-4 lg:justify-start md:justify-start sm:justify-center' alt='Social-Icons'>
                             <a href="https://www.instagram.com/majestichorns/" target="_blank">
-                                <img className='rounded-lg h-8 w-auto transform transition-transform duration-500 ease-in-out hover:scale-110' src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=E4405F&logoColor=white&labelColor=&style=for-the-badge"  alt="instagram logo"  />
+                                <img className='rounded-lg h-8 w-auto transform transition-transform duration-500 ease-in-out hover:scale-110' src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=0F172A&logoColor=white&labelColor=&style=for-the-badge"  alt="instagram logo"  />
                             </a>
                             <a href="https://www.facebook.com/majestichorns" target="_blank">
-                                <img className='rounded-lg h-8 w-auto transform transition-transform duration-500 ease-in-out hover:scale-110' src="https://img.shields.io/static/v1?message=FaceBook&logo=FaceBook&label=&color=0866FF&logoColor=white&labelColor=&style=for-the-badge"  alt="gmail logo"  />
+                                <img className='rounded-lg h-8 w-auto transform transition-transform duration-500 ease-in-out hover:scale-110' src="https://img.shields.io/static/v1?message=FaceBook&logo=FaceBook&label=&color=0F172A&logoColor=white&labelColor=&style=for-the-badge"  alt="gmail logo"  />
                             </a>
                         </div>
                     </div>

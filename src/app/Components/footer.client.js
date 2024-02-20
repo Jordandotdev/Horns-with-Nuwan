@@ -67,7 +67,7 @@ export default function Footer(){
                             </CardContent>
                         </Card>
 
-                        <ul className="flex flex-wrap  mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
+                        <ul className="flex flex-wrap p-2 mb-6 text-sm font-medium text-gray-500 sm:mb-0 dark:text-gray-400">
                             <li>
                                 <a href="/" className="hover:underline me-4 md:me-6">Home</a>
                             </li>
@@ -83,7 +83,7 @@ export default function Footer(){
                         </ul>
                 </div>
                 <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-                <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://flowbite.com/" className="hover:underline">Jordan Ferdinando™</a>. All Rights Reserved.</span>
+                <span className="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2024 <a href="https://www.linkedin.com/in/jordan-ferdinando/" className="hover:underline">Jordan Ferdinando™</a>. All Rights Reserved.</span>
             </div>
         </footer>
 
