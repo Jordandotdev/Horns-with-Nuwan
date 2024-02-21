@@ -5,7 +5,7 @@ import Prashan2 from "../../../public/jpg2.jpg";
 
 export default function projects() {
     return(
-        <section>
+        <section className="mt-12">
             <div id="main_port" className="item-center bg-white">
            <div className=" flex   mb-4 text-5xl items-center pt-6 px-4 mx-auto max-w-screen-xl font-extrabold text-gray-900 dark:text-white">
            Exploratory Projects 
