@@ -1,13 +1,11 @@
-import Image from 'next/image';
-import Prashan1 from '../../../../public/jpg1.jpg';
 import { Button } from "../../Components/ui/button.jsx";
 
 export default function ProjectTemp() {
     return (
-        <section class="m-2 font-sans leading-normal flex h-60">
+        <section class="m-2 font-sans leading-normal flex h-auto">
 
       
-        <div class="max-w-lg shadow-lg rounded overflow-hidden m-4 sm:flex">
+        <div class="max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex">
           <div class="h-48 sm:h-auto sm:w-48 md:w-64 flex-none  rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('https://unsplash.it/804/800')]" >
           </div>
           
