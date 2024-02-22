@@ -1,10 +1,10 @@
 import Image from 'next/image';
-import Nuwan2 from '../../../public/Nuwan2.jpg';
+import Nuwan3 from '../../../public/Nuwan3.jpg';
 import { Button } from '../Components/ui/button';
 
 export default function selfPortrait() {
 return(
-    <section className="bg-white px-4 py-4">
+    <section className="bg-white px-4 py-4 mt-16">
     <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
         <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
           <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Biography</h2>
@@ -20,15 +20,13 @@ return(
           </p>
           <Button className="mt-4">Download Resume</Button>
         </div>
-        <div className="relative aspect-w-1 aspect-h-1 mt-2 md:mt-4">
-        <Image
-            className="rounded-lg"
-            src={Nuwan2}
-            layout="responsive"
-            objectFit="cover"
-            quality={75}  
-            alt="Image description"  
-        />
+        <div className="relative aspect-w-1  aspect-h-1 mt-2 md:mt-4 flex ">
+          <Image
+              className="rounded-lg h-auto max-h-[700px] object-cover object-top lg:max-w-[450px] "
+              src={Nuwan3}
+              quality={75}   
+              alt="Image description"
+          />
         </div>
       </div>
     </section>
