@@ -1,5 +1,5 @@
 import { Button } from "../Components/ui/button.jsx";
-import ProjectTemp from "./components/project_temp";
+import ProjectTemp from "../Components/project_temp.js";
 
 export default function DataTable() {
   return (

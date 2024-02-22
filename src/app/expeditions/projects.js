@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { Button } from "../Components/ui/button.jsx";
-import Expeditions from "./components/expedition_temp.js";
+import Expeditions from "../Components/project_temp.js";
 
 export default function projects() {
     return(

@@ -8,12 +8,12 @@ export default function discover_audio() {
                     <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                         <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Discover</h2>
                         <p className="mb-4">
-                            We are strategists, designers and developers. Innovators and problem solvers. 
-                            Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need. Small enough to be simple and quick, but big enough to deliver the scope you want at the pace you need.
+                            Nuwan Gunawardhana is an Eductor, Recording Artist, Composer and multo-instrumentalist
+                            who specializes in Trumpet, Trombone and Harmonica.
                         </p>
                         <p>
-                            We are strategists, designers and developers.
-                             Innovators and problem solvers. Small enough to be simple and quick.
+                            He performs as a permanent member in two well established bands in Sri Lanka -
+                             The A Team and the Outlaws, and is also a member of Gustav Mahler Orchestra of Colombo.
                         </p>
                     </div>
                     <div>

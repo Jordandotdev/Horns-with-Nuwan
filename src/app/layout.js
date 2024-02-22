@@ -1,12 +1,6 @@
-
-import { Inter } from 'next/font/google';
 import './globals.css';
 import Footer from "./Components/footer.client.js";
 import Nav from './Components/nav.client.js';
-
-
-
-const inter = Inter({ subsets: ['latin'] });
 
 export const metadata = {
   title: 'Welcome',
@@ -21,4 +15,4 @@ export default function RootLayout({ children }) {
       <Footer />
     </div>
   );
-}
+} 
