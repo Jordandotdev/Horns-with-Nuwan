@@ -2,6 +2,14 @@
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuLabel,
+  DropdownMenuSeparator,
+  DropdownMenuTrigger,
+} from "../Components/ui/dropdown-menu.jsx"
 
 export default function Nav() {
   const links = [
@@ -32,7 +40,10 @@ export default function Nav() {
   ]
   const pathname = usePathname();
   return (
+    
 <nav className="fixed top-0 w-full z-50">
+
+
       <div className="max-w-screen-xl flex flex-wrap justify-center items-center mx-auto p-4">
         <ul className='flex flex-col gap-2 bg-white backdrop-blur-md p-3 rounded-lg shadow-lg transition-all duration-500 ease-out hover:opacity-100 opacity-30 md:flex-row'>
           {links.map(link => {

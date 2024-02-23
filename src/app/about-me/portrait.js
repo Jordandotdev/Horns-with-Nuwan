@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Nuwan3 from '../../../public/Nuwan3.jpg';
 import { Button } from '../Components/ui/button';
 
+
 export default function selfPortrait() {
 return(
     <section className="bg-white px-4 py-4 mt-16">
@@ -19,6 +20,7 @@ return(
             in Sri Lanka & taught Western music at Sussex College, Kiribathgoda. 
           </p>
           <Button className="mt-4">Download Resume</Button>
+
         </div>
         <div className="relative aspect-w-1  aspect-h-1 mt-2 md:mt-4 flex ">
           <Image
