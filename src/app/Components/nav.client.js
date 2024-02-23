@@ -32,23 +32,23 @@ export default function Nav() {
   ]
   const pathname = usePathname();
   return (
-<nav className=" fixed top-0 w-full z-50">
-  <div className="max-w-screen-xl flex flex-wrap justify-center items-center mx-auto p-4">
-   <ul className='flex gap-2 bg-white backdrop-blur-md p-3 rounded-lg shadow-lg transition-all duration-500 ease-out hover:opacity-100 opacity-30'>
-    {links.map(link => {
-      return(
-        <li key={link.path}>
-          <Link className={cn("font-medium rounded-lg text-sm py-2 px-4 transition-all duration-500 ease-out hover:bg-slate-200",
-            pathname === link.path ? "bg-slate-300" : ""
-          )} href={link.path}>
-            <span>{link.name}</span>
-          </Link>
-        </li>
-      )
-    })}
-   </ul>
-  </div>
-</nav>
+<nav className="fixed top-0 w-full z-50">
+      <div className="max-w-screen-xl flex flex-wrap justify-center items-center mx-auto p-4">
+        <ul className='flex flex-col gap-2 bg-white backdrop-blur-md p-3 rounded-lg shadow-lg transition-all duration-500 ease-out hover:opacity-100 opacity-30 md:flex-row'>
+          {links.map(link => {
+            return (
+              <li key={link.path} className="md:inline-block">
+                <Link className={cn("font-medium rounded-lg text-sm py-2 px-4 transition-all duration-500 ease-out hover:bg-slate-200",
+                  pathname === link.path ? "bg-slate-300" : ""
+                )} href={link.path}>
+                  <span>{link.name}</span>
+                </Link>
+              </li>
+            );
+          })}
+        </ul>
+      </div>
+    </nav>
 
   );
 }
