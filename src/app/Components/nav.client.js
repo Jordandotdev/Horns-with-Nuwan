@@ -34,7 +34,7 @@ export default function Nav() {
   return (
 <nav className=" fixed top-0 w-full z-50">
   <div className="max-w-screen-xl flex flex-wrap justify-center items-center mx-auto p-4">
-   <ul className='flex gap-2 bg-white p-3 rounded-lg shadow-lg transition-all duration-500 ease-out hover:opacity-100 opacity-50'>
+   <ul className='flex gap-2 bg-white backdrop-blur-md p-3 rounded-lg shadow-lg transition-all duration-500 ease-out hover:opacity-100 opacity-30'>
     {links.map(link => {
       return(
         <li key={link.path}>
