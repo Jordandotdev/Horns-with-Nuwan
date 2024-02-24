@@ -1,4 +1,3 @@
-"use client";
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
@@ -42,7 +41,7 @@ export default function NavComponent() {
             return (
               <li key={link.path} className="md:inline-block">
                 <Link className={cn("font-medium rounded-lg text-sm py-2 px-4 transition-all duration-500 ease-out hover:bg-slate-200",
-                  pathname === link.path ? "bg-slate-300 "  : ""
+                    pathname === link.path ? "bg-slate-300" : ""
                 )} href={link.path}>
                   <span>{link.name}</span>
                 </Link>

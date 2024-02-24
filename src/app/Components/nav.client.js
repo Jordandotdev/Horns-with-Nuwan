@@ -1,11 +1,13 @@
-"use client";
+'use client';
 import { useState } from 'react';
 import NavComponent from './ui/nav';
 
 export default function Nav() {
-  
-  const {isActive, setIsActive} = useState(false);
+  const [isActive, setIsActive] = useState(false);
+
   return (
-       <NavComponent/>
+    <>
+      <NavComponent/>
+    </>
   );
 }
