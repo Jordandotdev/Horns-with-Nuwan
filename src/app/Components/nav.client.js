@@ -12,7 +12,7 @@ export default function Nav() {
   return (
     <>
       <NavComponent/>
-      <Button onClick={() => setIsActive(!isActive)}>{isActive ? 'Close' : 'Open'}</Button>
+      
     </>
   );
 }

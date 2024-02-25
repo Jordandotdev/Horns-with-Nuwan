@@ -6,7 +6,7 @@ export default function ProjectTemp() {
 
       
         <div className="max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex">
-          <div className="h-48 sm:h-auto sm:w-48 md:w-64 flex-none  rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('https://unsplash.it/804/800')]" >
+          <div className="h-48 sm:h-auto sm:w-16 md:w-48 flex-none  rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('https://unsplash.it/804/800')]" >
           </div>
           
       
