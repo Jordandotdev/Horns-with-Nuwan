@@ -5,12 +5,12 @@ export default function ProjectTemp() {
         <section className="m-2 font-sans leading-normal flex h-auto">
 
       
-        <div className="max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex">
-          <div className="h-48 sm:h-auto sm:w-16 md:w-48 flex-none  rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('https://unsplash.it/804/800')]" >
+        <div className="max-w-xl  shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
+          <div className="h-48 sm:h-auto sm:w-80  md:w-100 flex-wrap  rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('https://unsplash.it/804/800')]" >
           </div>
           
       
-           <div className="px-6 py-4">
+           <div className="px-6 py-4 ">
             <h2 className="mb-2 font-black">
               Mystique Forest
             </h2>
