@@ -1,10 +1,8 @@
 'use client';
-import { useState } from 'react';
 import NavComponent from './ui/nav';
 import { Button } from './ui/button';
 
 export default function Nav() {
-  const [isActive, setIsActive] = useState(false);
   function handleClick(){
     console.log('clicked');
   }
@@ -12,7 +10,7 @@ export default function Nav() {
   return (
     <>
       <NavComponent/>
-      
+      <Button onClick={handleClick}>Hello</Button>
     </>
   );
 }

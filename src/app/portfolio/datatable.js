@@ -11,7 +11,6 @@ export default function DataTable() {
         <ProjectTemp />
         <ProjectTemp />
         <ProjectTemp />
-        <ProjectTemp />
       </div>
       <Button className="mt-4">Load More</Button>
     </section>
