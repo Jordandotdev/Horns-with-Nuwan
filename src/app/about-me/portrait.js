@@ -14,7 +14,10 @@ const fetchPortrait = async () => {
   return data;
 };
 
-export default function selfPortrait() {
+const selfPortrait = async () =>{
+  const portrait = await fetchPortrait();
+
+  console.log('portrait',portrait);
 
 return(
     <section className="bg-white px-4 py-4 mt-16">
@@ -46,3 +49,5 @@ return(
     </section>
 );
 }
+
+export default selfPortrait;
