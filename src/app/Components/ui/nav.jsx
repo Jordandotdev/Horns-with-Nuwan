@@ -1,8 +1,6 @@
 import { cn } from '@/lib/utils';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
-import { Button } from '../ui/button.jsx';
-import { useState } from 'react';
 
 export default function NavComponent() {
     const links = [
@@ -32,7 +30,6 @@ export default function NavComponent() {
         },
       ]
       const pathname = usePathname();
-      const [isActive, setIsActive] = useState(false);
 
     return(
         <nav className="fixed top-0 w-full z-50">
@@ -51,7 +48,6 @@ export default function NavComponent() {
               </li>
             );
           })}
-          <Button onClick={() => setIsActive(!isActive)}>{isActive ? 'Close' : 'Open'}</Button>
         </ul>
       </div>
     </nav>

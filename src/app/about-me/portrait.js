@@ -1,9 +1,21 @@
 import Image from 'next/image';
 import Nuwan3 from '../../../public/Nuwan3.jpg';
 import { Button } from '../Components/ui/button';
+import config from '../../config.js';
 
+const fetchPortrait = async () => {
+  const reqOptions = {
+    headers: {
+      Authorization: `Bearer ${process.env.API_TOKEN}`
+    }
+  };
+  const response = await fetch(`${config.api}/api/biography`, reqOptions);
+  const data = await response.json();
+  return data;
+};
 
 export default function selfPortrait() {
+
 return(
     <section className="bg-white px-4 py-4 mt-16">
     <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
