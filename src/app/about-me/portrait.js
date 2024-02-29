@@ -15,7 +15,7 @@ const fetchPortrait = async () => {
 };
 
 const selfPortrait = async () =>{
-  
+
   const portrait = await fetchPortrait();
 
 return(
