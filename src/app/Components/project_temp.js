@@ -23,8 +23,10 @@ export default function ProjectTemp(props) {
                A piece that defines and redefines the beauty of nature.  
             </p>
             
-            <Button>View</Button>  
-             
+            <a href={project.attributes.ProjectLink}>
+              <Button>View</Button>  
+            </a>
+
           </div>
       
         </div>

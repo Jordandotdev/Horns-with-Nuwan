@@ -10,7 +10,7 @@ export const FetchProjects = async (page, items) => {
           Authorization: `Bearer ${process.env.API_TOKEN}`
         }
       };
-      const response = await fetch(`${config.api}/api/projects?pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}`, reqOptions);
+      const response = await fetch(`${config.api}/api/projects?pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}&revalidate=10`, reqOptions);
       const projects = await response.json();
       console.log('Projects: ',projects.data);
       return projects;
