@@ -1,7 +1,10 @@
 import { Button } from "../Components/ui/button.jsx";
 import ProjectTemp from "../Components/project_temp.js";
+import { FetchProjects } from "../action.js";
 
-export default function DataTable() {
+ async function DataTable() {
+  await FetchProjects(2);
+
   return (
     <section className="flex flex-col items-center">
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 items-center py-4 px-4 mx-auto max-w-screen-l">
@@ -11,8 +14,11 @@ export default function DataTable() {
         <ProjectTemp />
         <ProjectTemp />
         <ProjectTemp />
+
       </div>
       <Button className="mt-4">Load More</Button>
     </section>
   );
 }
+
+export default DataTable;
