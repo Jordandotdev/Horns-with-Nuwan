@@ -7,7 +7,7 @@ export const FetchProjects = async () => {
           Authorization: `Bearer ${process.env.API_TOKEN}`
         }
       };
-      const response = await fetch(`${config.api}/api/biography`, reqOptions);
+      const response = await fetch(`${config.api}/api/project`, reqOptions);
       const data = await response.json();
       console.log(data);
       return data;
