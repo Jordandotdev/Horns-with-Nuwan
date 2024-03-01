@@ -3,7 +3,7 @@ import ProjectTemp from "../Components/project_temp.js";
 import { FetchProjects } from "../action.js";
 
 export default async function DataTable() {
-  const projects = await FetchProjects(1);
+  const projects = await FetchProjects(1, 6);
 
   return (
     <section className="flex flex-col items-center">

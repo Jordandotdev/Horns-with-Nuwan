@@ -4,7 +4,7 @@ import { FetchProjects } from "../action.js";
 
 export default async function projects() {
 
-    const projects = await FetchProjects(2);
+    const projects = await FetchProjects(1, 4);
 
     return(
         <section className="mt-14">
