@@ -2,23 +2,17 @@ import { Button } from "../Components/ui/button.jsx";
 import ProjectTemp from "../Components/project_temp.js";
 import { FetchProjects } from "../action.js";
 
- async function DataTable() {
-  await FetchProjects(2);
+export default async function DataTable() {
+  const projects = await FetchProjects(1);
 
   return (
     <section className="flex flex-col items-center">
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 items-center py-4 px-4 mx-auto max-w-screen-l">
-        <ProjectTemp />
-        <ProjectTemp />
-        <ProjectTemp />
-        <ProjectTemp />
-        <ProjectTemp />
-        <ProjectTemp />
-
+        {projects.data.map((item) => (
+          <ProjectTemp key={item.id} project={item} />
+        ))}
       </div>
       <Button className="mt-4">Load More</Button>
     </section>
   );
 }
-
-export default DataTable;

@@ -1,8 +1,11 @@
-import Image from "next/image";
 import { Button } from "../Components/ui/button.jsx";
 import Expeditions from "../Components/project_temp.js";
+import { FetchProjects } from "../action.js";
 
-export default function projects() {
+export default async function projects() {
+
+    const projects = await FetchProjects(2);
+
     return(
         <section className="mt-14">
             <div id="main_port" className="item-center bg-white">
@@ -10,11 +13,10 @@ export default function projects() {
                 Exploratory Projects 
                 </div> 
                 <div className="flex flex-wrap justify-center items-center mx-auto max-w-screen-xl">
-                        <Expeditions />
-                        <Expeditions />
-                        <Expeditions />
-                        <Expeditions />
-                    </div>
+                    {projects.data.map((item) => (
+                        <Expeditions key={item.id} project={item} />
+                    ))}
+                </div>
                 
                 <div className="flex justify-center items-center p-4 text-4xl  mx-auto max-w-screen-xl">
                     <a href="/portfolio">

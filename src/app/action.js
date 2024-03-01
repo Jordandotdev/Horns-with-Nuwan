@@ -12,5 +12,6 @@ export const FetchProjects = async (page) => {
       const response = await fetch(`${config.api}/api/projects?pagination[pageSize]=6&pagination[page]=${pageNumber}`, reqOptions);
       const projects = await response.json();
       console.log(projects.data);
+      console.log(typeof data);
       return projects;
-    }; 
+    };  
