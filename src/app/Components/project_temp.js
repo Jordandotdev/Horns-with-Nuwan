@@ -19,8 +19,7 @@ export default function ProjectTemp(props) {
             {project.attributes.ProjectDate}            
             </h3>
             <p className="mb-4 text-grey-dark text-sm">
-              A beautiful forest with a lot of mysteries to be solved.
-               A piece that defines and redefines the beauty of nature.  
+              {project.attributes.Description}  
             </p>
             
             <a href={project.attributes.ProjectLink}>
