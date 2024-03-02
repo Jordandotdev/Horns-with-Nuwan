@@ -3,10 +3,10 @@ import { Button } from "./ui/button.jsx";
 export default function ProjectTemp(props) {
   const project =  props.project;
     return (
-        <section className="m-2 font-sans leading-normal flex h-auto">
+        <section className=" m-2 font-sans leading-normal flex h-auto">
 
       
-        <div className="max-w-xl  shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
+        <div className="bg-white max-w-xl  shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
           <div className="h-48 sm:h-auto sm:w-80  md:w-140 flex-wrap  rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat bg-[url('https://unsplash.it/804/800')]" >
           </div>
           

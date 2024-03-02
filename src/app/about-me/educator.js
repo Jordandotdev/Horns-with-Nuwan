@@ -18,7 +18,7 @@ const educator = async ()=> {
   const educator = await fetchEducator();
 
     return(
-      <section className="bg-white px-4 py-4 ">
+      <section className="bg-offwhite px-4 py-4 ">
         <div className="gap-16 items-center  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2  lg:px-6">
         <div className="relative aspect-w-1 aspect-h-1 mt-2 md:mt-4">
               <Image

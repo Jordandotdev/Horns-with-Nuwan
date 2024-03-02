@@ -8,7 +8,7 @@ export default async function projects() {
 
     return(
         <section className="mt-14">
-            <div id="main_port" style={{backgroundColor: '#f9f6f2'}} className="item-center ">
+            <div id="main_port" className="bg-offwhite item-center ">
                 <div className=" flex  mb-4 justify-center text-5xl pt-6 px-4 mx-auto max-w-screen-xl font-extrabold text-gray-900 dark:text-white">
                 Exploratory Projects 
                 </div> 
