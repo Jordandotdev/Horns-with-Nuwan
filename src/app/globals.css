@@ -18,7 +18,7 @@
 };
 
 .bg-offwhite {
-    background-color: var(--offwhite);
+  background-color: var(--offwhite);
 };
 
 @layer base {
