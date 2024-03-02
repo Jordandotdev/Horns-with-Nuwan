@@ -36,7 +36,8 @@ export default function NavComponent() {
 
 
       <div className="max-w-screen-xl flex flex-wrap justify-center items-center mx-auto p-4">
-        <ul className='flex flex-col gap-2 bg-white backdrop-blur-md p-3 rounded-lg shadow-lg transition-all duration-500 ease-out hover:opacity-100 opacity-30 md:flex-row'>
+        {/* nav bar opacity to be discussed */}
+        <ul  className='flex flex-col gap-2 bg-white backdrop-blur-md p-3 rounded-lg shadow-lg transition-all duration-500 ease-out hover:opacity-100 opacity-20 md:flex-row'>
           {links.map(link => {
             return (
               <li key={link.path} className="md:inline-block">

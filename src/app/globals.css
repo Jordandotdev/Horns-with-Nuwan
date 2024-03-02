@@ -6,6 +6,7 @@
 :root{
   /* colors */
   --gold: #CEAA54;
+  --offwhite: #f9f6f2;
 }
 
 .text-gold {
@@ -16,6 +17,9 @@
     background-color: var(--gold);
 };
 
+.bg-offwhite {
+    background-color: var(--offwhite);
+};
 
 @layer base {
   :root {

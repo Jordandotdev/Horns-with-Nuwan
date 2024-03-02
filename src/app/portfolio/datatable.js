@@ -2,6 +2,8 @@ import { Button } from "../Components/ui/button.jsx";
 import ProjectTemp from "../Components/project_temp.js";
 import { FetchProjects } from "../action.js";
 
+//addition of the filters to the top right of the page
+
 export default async function DataTable() {
   const projects = await FetchProjects(1, 6);
 

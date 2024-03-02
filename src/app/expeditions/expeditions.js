@@ -2,10 +2,10 @@ import Image from 'next/image';
 import Prashan1 from '../../../public/jpg1.jpg';
 import { Button } from "../Components/ui/button.jsx"
 
-
+//create a down arrow for the Exploratory projects instead of the button
 export default function expeditions() {
 return(
-    <section className="bg-white px-4 py-4 mt-16">
+    <section style={{backgroundColor: '#f9f6f2'}} className=" px-4 py-4 mt-16">
         <div className="gap-16 items-center  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2  lg:px-6">
         <div className="relative aspect-w-1 aspect-h-1 mt-2 md:mt-4">
             <Image
@@ -32,7 +32,7 @@ return(
                 to bring to the limelight it trully deserves.
             </p>
             <a href='/portfolio'>
-            <Button   className="mt-4" >View More</Button>
+            <Button   className="mt-4" >View More Bellow</Button>
             </a>
             </div>
         </div>

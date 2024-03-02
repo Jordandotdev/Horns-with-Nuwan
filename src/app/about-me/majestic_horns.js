@@ -2,6 +2,8 @@ import Image from "next/image";
 import Horns1 from '../../../public/Horns1.jpg';
 import Horns2 from '../../../public/Horns2.jpg';
 
+// addition to the selfportrait at the bottom
+
 export default function majestic_horns() {
     return (
         <div>
@@ -43,6 +45,7 @@ export default function majestic_horns() {
                             Majestic Horns offers a complete range of repair services from
                              a simple adjustment to a complete overhaul for all the Woodwind and Brasswind instruments.
                         </p>
+                        {/* links to be given  */}
                         <div className='flex mt-8 space-x-4 lg:justify-start md:justify-start sm:justify-center' alt='Social-Icons'>
                             <a href="https://www.instagram.com/majestichorns/" target="_blank">
                                 <img className='rounded-lg h-8 w-auto transform transition-transform duration-500 ease-in-out hover:scale-110' src="https://img.shields.io/static/v1?message=Instagram&logo=instagram&label=&color=0F172A&logoColor=white&labelColor=&style=for-the-badge"  alt="instagram logo"  />

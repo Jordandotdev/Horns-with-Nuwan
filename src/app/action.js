@@ -1,5 +1,3 @@
-'use server';
-
 import config from '../config.js';
 
 export const FetchProjects = async (page, items) => {
@@ -7,11 +5,12 @@ export const FetchProjects = async (page, items) => {
     const itemNumber = Number(items);
     const reqOptions = {
         headers: {
-          Authorization: `Bearer ${process.env.API_TOKEN}`
+          Authorization: `Bearer ${process.env.API_TOKEN}`,
+          'Cache-Control': 'no-store',
         }
-      };
-      const response = await fetch(`${config.api}/api/projects?pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}&revalidate=10`, reqOptions);
-      const projects = await response.json();
-      console.log('Projects: ',projects.data);
-      return projects;
-    };  
+    };
+    const response = await fetch(`${config.api}/api/projects?publicationState=live&locale[0]=en&pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}`, reqOptions);
+    const projects = await response.json();
+    console.log('Projects: ', projects.data);
+    return projects;
+};
