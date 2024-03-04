@@ -1,9 +1,10 @@
 import { Button } from "../Components/ui/button.jsx";
 import ProjectTemp from "../Components/project_temp.js";
 import { FetchProjects } from "../action.js";
+import { LoadMore } from "./loadmore.js";
 
 export default async function DataTable() {
-  const items = 12;
+  const items = 6;
   const projects = await FetchProjects(1, items);
 
   return (
