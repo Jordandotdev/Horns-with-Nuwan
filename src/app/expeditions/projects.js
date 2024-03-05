@@ -7,7 +7,7 @@ export default async function projects() {
     const projects = await FetchProjects(1, 4);
 
     return(
-        <section className="mt-14">
+        <section id="Exploratory" className="mt-14">
             <div id="main_port" className="bg-offwhite item-center ">
                 <div className=" flex  mb-4 justify-center text-5xl pt-6 px-4 mx-auto max-w-screen-xl font-extrabold text-gray-900 dark:text-white">
                 Exploratory Projects 

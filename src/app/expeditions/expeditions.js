@@ -9,13 +9,11 @@ return(
         <div className="gap-16 items-center  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2  lg:px-6">
         <div className="relative aspect-w-1 aspect-h-1 mt-2 md:mt-4">
             <Image
-                className="rounded-lg"
-                src={Prashan1}
-                layout="responsive"
-                objectFit="cover"
-                quality={75}  
-                alt="Image description"  
-            />
+                  className="rounded-lg h-auto max-h-[700px] object-cover object-top lg:max-w-[450px] "
+                  src={Prashan1}
+                  quality={75}   
+                  alt="Image description"
+              />
             </div>
             <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Expeditions</h2>
@@ -31,7 +29,7 @@ return(
                 ethonomusic and in particular. Papare which is a style of music that Nuwan perosnaly hopes
                 to bring to the limelight it trully deserves.
             </p>
-            <a href='/portfolio'>
+            <a href='#Exploratory'>
             <Button   className="mt-4" >View More Bellow</Button>
             </a>
             </div>
