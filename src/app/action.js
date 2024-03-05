@@ -10,7 +10,7 @@ export const FetchProjects = async (page, items) => {
       },
       cache: 'no-store', 
   };
-  const response = await fetch(`${config.api}/api/projects?populate=*&publicationState=live&locale[0]=en&pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}`, reqOptions);
+  const response = await fetch(`${config.api}/api/projects?populate[0]=categories&publicationState=live&locale[0]=en&pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}`, reqOptions);
   const projects = await response.json();
   console.log('Projects: ', projects.data);
   return projects;

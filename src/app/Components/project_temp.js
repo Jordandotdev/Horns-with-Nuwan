@@ -15,9 +15,14 @@ export default function ProjectTemp(props) {
             <h2 className="mb-2 font-black">
               {project.attributes.ProjectName}
             </h2>
-            <h3 className="mb-4 text-gold text-sm" >
+            <h3 className="mb-2 text-gold text-sm" >
             {project.attributes.ProjectDate}            
             </h3>
+            {project.attributes.categories.data.map((category) => (
+              <Button className='mr-1 mb-4' variant="outline" key={category.id}>
+                {category.attributes.ProjectCategories}
+              </Button>
+            ))}
             <p className="mb-4 text-grey-dark text-sm">
               {project.attributes.Description}  
             </p>
