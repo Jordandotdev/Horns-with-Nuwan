@@ -21,7 +21,7 @@ export default function NavComponent() {
           name: 'Portfolio',
         },
         {
-          path: '/#Majestic',
+          path: '/about-me#Majestic',
           name: 'Majestic Horns',
         },
         {
