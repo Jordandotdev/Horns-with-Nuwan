@@ -13,8 +13,10 @@ export default async function projects() {
                 Exploratory Projects 
                 </div> 
                 <div className="flex flex-wrap justify-center items-center mx-auto max-w-screen-xl">
-                    {projects.data.map((item) => (
-                        <Expeditions key={item.id} project={item} />
+                    {projects && projects.data && projects.data.map((item,  index) => (
+                        
+                            <Expeditions key={item.id} project={item} id={index}/>
+                        
                     ))}
                 </div>
                 
