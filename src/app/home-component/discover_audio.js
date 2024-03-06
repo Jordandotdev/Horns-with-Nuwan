@@ -11,7 +11,7 @@ export default function discover_audio() {
                         <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Discover</h2>
                         <p className="mb-4">
                             Nuwan Gunawardhana is an Eductor, Recording Artist, Composer and multo-instrumentalist
-                            who specializes in Trumpet, Trombone and Harmonica.
+                            who specializes in Trumpet, Trombone and Violin.
                         </p>
                         <p>
                             He performs as a permanent member in two well established bands in Sri Lanka -
