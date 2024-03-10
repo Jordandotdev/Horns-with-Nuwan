@@ -1,11 +1,12 @@
 import { Button } from "../Components/ui/button.jsx";
 import ProjectTemp from "../Components/project_temp.js";
 import { FetchProjects } from "../action.js";
-import { LoadMore } from "./loadmore.js";
+
 
 export default async function DataTable() {
   const items = 6;
-  const projects = await FetchProjects(1, items);
+  const page = 1;
+  const projects = await FetchProjects(page, items);
 
   return (
     <section className="flex flex-col items-center">
