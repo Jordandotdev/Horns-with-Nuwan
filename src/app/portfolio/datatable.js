@@ -1,6 +1,6 @@
-import { Button } from "../Components/ui/button.jsx";
-import ProjectTemp from "../Components/project_temp.js";
 import { FetchProjects } from "../action.js";
+import ProjectTemp from "../Components/project_temp.js";
+import ButtonClick from "./component/buttonClick.js";
 
 
 export default async function DataTable() {
@@ -15,7 +15,7 @@ export default async function DataTable() {
           <ProjectTemp key={item.id} project={item} id={index}/>
         ))}
       </div>
-      <Button className="mt-4">Load More</Button>
+      <ButtonClick />
     </section>
   );
 }
