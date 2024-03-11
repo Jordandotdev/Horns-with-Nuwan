@@ -1,6 +1,7 @@
 'use client';
 
 import React, { useEffect, useState } from "react";
+import { Button } from "../Components/ui/button.jsx";
 
 
 function LoadMore({ clicked }) {
@@ -14,10 +15,10 @@ function LoadMore({ clicked }) {
 
 
 return (
-  <div>
-    Current Page: {page}
-  </div>
-);
+  <>
+    <Button onClick={handleClick}>Load More</Button>
+  </>
+  );
 }
 
 export default LoadMore;
