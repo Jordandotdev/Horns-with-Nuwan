@@ -1,11 +1,21 @@
+'use client';
+
 import { FetchProjects } from "../action.js";
 import ProjectTemp from "../Components/project_temp.js";
-import ButtonClick from "./component/buttonClick.js";
+import React, { useState } from "react";
+import { Button } from "../Components/ui/button.jsx";
+import LoadMore from "./loadmore.js";
 
 
 export default async function DataTable() {
-  const items = 6;
+  const [items, setItems] = useState(6);
   const page = 1;
+  
+
+  const loadMore = () => {
+    setItems((items) => (items) + 6);
+  }
+
   const projects = await FetchProjects(page, items);
 
   return (
@@ -15,7 +25,7 @@ export default async function DataTable() {
           <ProjectTemp key={item.id} project={item} id={index}/>
         ))}
       </div>
-      <ButtonClick />
+     <Button onClick={loadMore}>Load More</Button>
     </section>
   );
 }

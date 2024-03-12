@@ -1,24 +1,36 @@
-'use client';
+// loadmore.js
 
-import React, { useEffect, useState } from "react";
-import { Button } from "../Components/ui/button.jsx";
+import React, { useState, useEffect } from 'react';
+import { FetchProjects } from "../action.js";
+import ProjectTemp from '../Components/project_temp.js';
+import { Button } from '../Components/ui/button.jsx';
 
-
-function LoadMore({ clicked }) {
- const [page, setPage] = useState(1); 
+export default function LoadMore() {
+ const [items, setItems] = useState(6);
+ const [projects, setProjects] = useState([]);
+ const page = 1;
 
  useEffect(() => {
-  if (clicked) {
-     setPage(prevPage => prevPage + 1);
-  }
- }, [clicked]);
+    const loadProjects = async () => {
+      const fetchedProjects = await FetchProjects(page, items);
+      setProjects(fetchedProjects);
+    };
 
+    loadProjects();
+ }, [items]);
 
-return (
-  <>
-    <Button onClick={handleClick}>Load More</Button>
-  </>
-  );
+ const loadMore = () => {
+    setItems((prevItems) => prevItems + 6);
+ };
+
+ return (
+    <section className="flex flex-col items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 items-center py-4 px-4 mx-auto max-w-screen-l">
+        {projects.map((item, index) => (
+          <ProjectTemp key={item.id} project={item} id={index} />
+        ))}
+      </div>
+      <Button onClick={loadMore}>Load More</Button>
+    </section>
+ );
 }
-
-export default LoadMore;
