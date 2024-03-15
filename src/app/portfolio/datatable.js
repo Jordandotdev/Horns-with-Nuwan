@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Button } from "../Components/ui/button.jsx";
+import ProjectsCards from "./projectsCards.js";
 
 export default function DataTable({children}) {
   const [items, setItems] = useState(6);
@@ -15,8 +16,10 @@ export default function DataTable({children}) {
 
   return (
     <section className="flex flex-col items-center">
-      <div>{children}</div>
-     <Button onClick={loadMore}>Load More</Button>
+        <div>
+          {children}
+        </div>
+     <Button onClick={loadMore}>Load More {items}</Button>
     </section>
   );
 }

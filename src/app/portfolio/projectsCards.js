@@ -1,11 +1,11 @@
 import { FetchProjects } from "../action.js";
 import ProjectTemp from "../Components/project_temp.js";
+import React from "react";
 
 
-const ProjectsCards = async (page,items)=> {
-  const setPage = 2;
+const ProjectsCards = async ({page, items})=> {
+  const setPage = 1;
   const setItems = 6;
-
   const projects = await FetchProjects(setPage, setItems);
 
   return (

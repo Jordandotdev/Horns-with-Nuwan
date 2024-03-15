@@ -1,3 +1,5 @@
+'use server';
+
 import config from '../config.js';
 
 export const FetchProjects = async (page, items) => {
