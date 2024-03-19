@@ -3,10 +3,11 @@ import ProjectsCards from './projectsCards.js';
 
 
 export default function Portfolio() {
-  
+  const items = 9;
+
   return (
     <section className="mt-14 bg-offwhite px-4 py-4">
-      <ProjectsCards />
+      <ProjectsCards items={items}/>
       <LoadMore />
     </section>
   )

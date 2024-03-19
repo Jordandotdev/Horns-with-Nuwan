@@ -4,7 +4,7 @@ import React, { useState } from "react";
 import { Button } from "../Components/ui/button.jsx";
 
 
-export default function DataTable() {
+export default function LoadMore() {
   const [items, setItems] = useState(6);
   
   const loadMore = async () => {

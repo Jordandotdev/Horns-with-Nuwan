@@ -5,7 +5,7 @@ import React from "react";
 
 const ProjectsCards = async ({items})=> {
   const setPage = 1;
-  const setItems = 6;
+  const setItems = items;
   const projects = await FetchProjects(setPage, setItems);
 
   return (
