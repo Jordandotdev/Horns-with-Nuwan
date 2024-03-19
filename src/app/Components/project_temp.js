@@ -1,7 +1,6 @@
 import { Button } from "./ui/button.jsx";
 
-export default function ProjectTemp(props) {
-  const project =  props.project;
+export default function ProjectTemp({project}) {
     return (
         <section className=" m-2 font-sans leading-normal flex h-auto">
 
