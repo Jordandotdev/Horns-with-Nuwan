@@ -1,10 +1,22 @@
 import Image from "next/image";
 import Horns1 from '../../../public/Horns1.jpg';
 import Horns2 from '../../../public/Horns2.jpg';
+import config from '../../config.js';
 
-// addition to the selfportrait at the bottom
+const fetchHorns = async () => {
+    const reqOptions = {
+      headers: {
+        Authorization: `Bearer ${process.env.API_TOKEN}`
+      },
+      cache: 'no-store', 
+    };
+    const response = await fetch(`${config.api}/api/majestic-horn`, reqOptions);
+    const data = await response.json();
+    return data;
+  };
 
-export default function majestic_horns() {
+const majestic_horns = async ()  => {
+    const Horns = await fetchHorns();
     return (
         <div>
             <section id="Majestic" className="bg-offwhite px-4 py-8">
@@ -38,12 +50,10 @@ export default function majestic_horns() {
                     <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                         <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Majestic Horns</h2>
                         <p className="mb-4">
-                            Majestic Horns is dedicated to providing the highest quality repair
-                             and restoration services.
+                            {Horns.data.attributes.Paragraph1}
                         </p>
                         <p>
-                            Majestic Horns offers a complete range of repair services from
-                             a simple adjustment to a complete overhaul for all the Woodwind and Brasswind instruments.
+                            {Horns.data.attributes.Paragraph2}
                         </p>
                         {/* links to be given  */}
                         <div className='flex mt-8 space-x-4 lg:justify-start md:justify-start sm:justify-center' alt='Social-Icons'>
@@ -60,3 +70,5 @@ export default function majestic_horns() {
         </div>
     );
 }
+
+export default majestic_horns;

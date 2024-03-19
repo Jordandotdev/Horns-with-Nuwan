@@ -6,7 +6,8 @@ const fetchEducator = async () => {
   const reqOptions = {
     headers: {
       Authorization: `Bearer ${process.env.API_TOKEN}`
-    }
+    },
+    cache: 'no-store',
   };
   const response = await fetch(`${config.api}/api/an-educator`, reqOptions);
   const data = await response.json();

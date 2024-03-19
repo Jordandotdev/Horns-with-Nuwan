@@ -1,9 +1,22 @@
 import Image from 'next/image';
 import Prashan1 from '../../../public/jpg1.jpg';
 import { Button } from "../Components/ui/button.jsx"
+import config from '../../config.js';
 
-//create a down arrow for the Exploratory projects instead of the button
-export default function expeditions() {
+const fetchExpeditions = async () => {
+    const reqOptions = {
+      headers: {
+        Authorization: `Bearer ${process.env.API_TOKEN}`
+      },
+      cache: 'no-store',
+    };
+    const response = await fetch(`${config.api}/api/expedition`, reqOptions);
+    const data = await response.json();
+    return data;
+  };
+
+const expeditions = async () => {
+    const Expeditions = await fetchExpeditions();
 return(
     <section className="bg-offwhite px-4 py-4 mt-16">
         <div className="gap-16 items-center  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2  lg:px-6">
@@ -18,16 +31,10 @@ return(
             <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
             <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Expeditions</h2>
             <p className="mb-4">
-                Nuwan is interested in several research areas of music. He pays special attention to
-                ethonomusic and in particular. Papare which is a style of music that Nuwan perosnaly hopes
-                to bring to the limelight it trully deserves.
+                {Expeditions.data.attributes.Paragraph1}
             </p>
             <p>
-            Nuwan is interested in several research areas of music. He pays special attention to
-                ethonomusic and in particular. Papare which is a style of music that Nuwan perosnaly hopes
-                to bring to the limelight it trully deserves.Nuwan is interested in several research areas of music. He pays special attention to
-                ethonomusic and in particular. Papare which is a style of music that Nuwan perosnaly hopes
-                to bring to the limelight it trully deserves.
+                {Expeditions.data.attributes.Paragraph1}
             </p>
             <a href='#Exploratory'>
             <Button   className="mt-4" >View More Bellow</Button>
@@ -37,3 +44,5 @@ return(
     </section>
 );
 }
+
+export default expeditions;

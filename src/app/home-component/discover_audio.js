@@ -1,8 +1,20 @@
 import AudioPlayer from "./components/audio_player.js";
+import config from '../../config.js';
 
-//addition of 2 links for spotify and apple music - button component to be created
+const fetchDiscover = async () => {
+    const reqOptions = {
+      headers: {
+        Authorization: `Bearer ${process.env.API_TOKEN}`
+      },
+      cache: 'no-store',
+    };
+    const response = await fetch(`${config.api}/api/discover`, reqOptions);
+    const data = await response.json();
+    return data;
+  };
 
-export default function discover_audio() {
+const discover_audio = async () => {
+    const Discover = await fetchDiscover();
     return (
         <div>
             <section className="bg-offwhite px-4 py-4">
@@ -10,12 +22,10 @@ export default function discover_audio() {
                     <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
                         <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Discover</h2>
                         <p className="mb-4">
-                            Nuwan Gunawardhana is an Eductor, Recording Artist, Composer and multo-instrumentalist
-                            who specializes in Trumpet, Trombone and Violin.
+                            {Discover.data.attributes.Paragraph1}
                         </p>
                         <p>
-                            He performs as a permanent member in two well established bands in Sri Lanka -
-                             The A Team and the Outlaws, and is also a member of Gustav Mahler Orchestra of Colombo.
+                           {Discover.data.attributes.Paragraph2}
                         </p>
                         <div className='flex mt-8 space-x-4 lg:justify-start md:justify-start sm:justify-center' alt='Social-Icons'>
                             <a href="https://www.instagram.com/majestichorns/" target="_blank">
@@ -34,3 +44,5 @@ export default function discover_audio() {
         </div>
     );
 }
+
+export default discover_audio;

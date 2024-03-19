@@ -7,7 +7,8 @@ const fetchPortrait = async () => {
   const reqOptions = {
     headers: {
       Authorization: `Bearer ${process.env.API_TOKEN}`
-    }
+    },
+    cache: 'no-store',
   };
   const response = await fetch(`${config.api}/api/biography`, reqOptions);
   const data = await response.json();
@@ -29,7 +30,7 @@ return(
           <p>
               {portrait.data.attributes.Paragraph2} 
           </p>
-          <Button className="mt-4">Download Resume</Button>
+          {/* <Button className="mt-4">Download Resume</Button> */}
 
         </div>
         <div className="relative aspect-w-1  aspect-h-1 mt-2 md:mt-4 flex ">
