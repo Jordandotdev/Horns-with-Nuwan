@@ -1,10 +1,10 @@
 import { Button } from "../Components/ui/button.jsx";
 import Expeditions from "../Components/project_temp.js";
-import { FetchProjects } from "../action.js";
+import { FetchProjectsExploratory } from "../actionExploratory.js";
 
 export default async function projects() {
 
-    const projects = await FetchProjects(1, 4);
+    const projects = await FetchProjectsExploratory(1, 4);
 
     return(
         <section id="Exploratory" className="mt-14">
@@ -13,9 +13,9 @@ export default async function projects() {
                 Exploratory Projects 
                 </div> 
                 <div className="flex flex-wrap justify-center items-center mx-auto max-w-screen-xl">
-                    {projects && projects.data && projects.data.map((item,  index) => (
+                    {projects && projects.data && projects.data.map((props) => (
                         
-                            <Expeditions key={item.id} project={item} id={index}/>
+                            <Expeditions  key={props.id} project={props} />
                         
                     ))}
                 </div>

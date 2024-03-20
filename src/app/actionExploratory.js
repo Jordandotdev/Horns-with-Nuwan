@@ -2,7 +2,7 @@
 
 import config from '../config.js';
 
-export const FetchProjects = async (page, items) => {
+export const FetchProjectsExploratory = async (page, items) => {
  const pageNumber = Number(page);
  const itemNumber = Number(items);
  const reqOptions = {
