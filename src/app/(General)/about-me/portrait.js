@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Nuwan3 from '../../../public/Nuwan3.jpg';
-import { Button } from '../Components/ui/button';
-import config from '../../config.js';
+import Nuwan3 from '../../../../public/Nuwan3.jpg';
+import { Button } from '../../Components/ui/button';
+import config from '../../../config.js';
 
 const fetchPortrait = async () => {
   const reqOptions = {

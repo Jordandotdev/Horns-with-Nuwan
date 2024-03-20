@@ -1,13 +1,15 @@
+'use client';
 
-import ProjectsCards from "./projectsCards.js";
+import LoadMore from "./loadmore";
 
-export default function Portfolio() {
+const Portfolio = () => {
 
   return (
     <section className="mt-14 bg-offwhite px-4 py-4">
-      <ProjectsCards />
+      <LoadMore />
     </section>
   )
-}
+};
 
+export default Portfolio;
 

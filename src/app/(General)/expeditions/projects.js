@@ -1,5 +1,5 @@
-import { Button } from "../Components/ui/button.jsx";
-import Expeditions from "../Components/project_temp.js";
+import { Button } from "../../Components/ui/button.jsx";
+import Expeditions from "../../Components/project_temp.js";
 import { FetchProjectsExploratory } from "../actionExploratory.js";
 
 export default async function projects() {

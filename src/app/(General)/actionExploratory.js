@@ -1,6 +1,6 @@
 'use server';
 
-import config from '../config.js';
+import config from '../../config.js';
 
 export const FetchProjectsExploratory = async (page, items) => {
  const pageNumber = Number(page);

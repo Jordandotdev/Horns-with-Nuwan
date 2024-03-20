@@ -1,6 +1,6 @@
-import './globals.css';
-import Footer from "./Components/footer.js";
-import Nav from './Components/nav.js';
+import '../globals.css';
+import Footer from "../Components/footer.js";
+import Nav from '../Components/nav.js';
 
 export const metadata = {
   title: 'Welcome',

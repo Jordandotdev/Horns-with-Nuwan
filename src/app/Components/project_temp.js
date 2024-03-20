@@ -2,7 +2,7 @@
 
 import { Button } from "./ui/button.jsx";
 
-export default function ProjectTemp({project}) {
+const ProjectTemp = ({project}) => {
     return (
         <section className=" m-2 font-sans leading-normal flex h-auto">
         <div className="bg-white max-w-xl  shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
@@ -35,3 +35,5 @@ export default function ProjectTemp({project}) {
       </section>
     );
 }
+
+export default ProjectTemp

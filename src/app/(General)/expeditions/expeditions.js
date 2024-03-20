@@ -1,7 +1,7 @@
 import Image from 'next/image';
-import Prashan1 from '../../../public/jpg1.jpg';
-import { Button } from "../Components/ui/button.jsx"
-import config from '../../config.js';
+import Prashan1 from '../../../../public/jpg1.jpg';
+import { Button } from "../../Components/ui/button.jsx"
+import config from '../../../config.js';
 
 const fetchExpeditions = async () => {
     const reqOptions = {
