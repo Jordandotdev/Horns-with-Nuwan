@@ -1,8 +1,8 @@
-import {FetchProjects} from '../action.js';
-import ProjectTemp from "../Components/project_temp.js";
+import {FetchProjects} from '../../action.js';
+import ProjectTemp from "../../Components/project_temp.js";
 import React from "react";
 import {loadMore} from "./loadmore.js";
-import { Button } from '../Components/ui/button.jsx';
+import { Button } from '../../Components/ui/button.jsx';
 
 
 export default async function ProjectsCards() {
