@@ -1,12 +1,14 @@
 'use client';
 
-import LoadMore from "./loadmore";
+import  Projects  from '../action.js';
 
 const Portfolio = () => {
 
+  const item = 6;
+
   return (
     <section className="mt-14 bg-offwhite px-4 py-4">
-      <LoadMore />
+     <Projects/>
     </section>
   )
 };
