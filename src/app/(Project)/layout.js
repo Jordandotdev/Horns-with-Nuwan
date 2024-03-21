@@ -13,7 +13,9 @@ export default function RootLayout() {
     <html lang="en">
       <body className='bg-offwhite'>
         <Nav />
-          <Projects items={items} />
+          <div className='mt-16'>
+            <Projects items={items} />
+          </div>
         <Footer />
       </body>
     </html>

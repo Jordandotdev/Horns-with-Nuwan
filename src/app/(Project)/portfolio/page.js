@@ -4,11 +4,11 @@ import  Projects  from '../action.js';
 
 const Portfolio = () => {
 
-  const item = 9;
+  const numberItems = 3;
 
   return (
     <section className="mt-14 bg-offwhite px-4 py-4">
-     <Projects item={item}/>
+     <Projects item={numberItems}/>
     </section>
   )
 };
