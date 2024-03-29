@@ -32,12 +32,12 @@ export default function Projects({ item }) {
     } catch (error) {
       console.log('There was a problem with your fetch operation:', error);
     }
-  },[itemNumber]);
+  },[itemNumber, reqOptions, pageNumber]);
 
 
   useEffect(() => {
     getProjects();
-  }, []);
+  });
 
   const incrementOnClick = () => {
     setItemNumber(itemNumber + 6);
@@ -48,7 +48,7 @@ export default function Projects({ item }) {
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 items-center py-4 px-4 mx-auto max-w-screen-l">
         {posts && posts.data && posts.data.map((props) => (
-          <ProjectTemp project={props} />
+          <ProjectTemp key={props.id} project={props} />
         ))}
       </div>
       <div className="flex justify-center">
