@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import config from '../../config.js';
 import ProjectTemp from '../../app/Components/project_temp.js';
 import { Button } from '../Components/ui/button.jsx';
@@ -16,7 +16,7 @@ export default function Projects({ item }) {
     },
     cache: 'no-store',
   }
-  const getProjects = async () => {
+  const getProjects = useCallback( async () => {
     try {
        const response = await fetch(
         `${config.api}/api/projects?populate=*&publicationState=live&locale[0]=en&pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}`,
@@ -32,7 +32,7 @@ export default function Projects({ item }) {
     } catch (error) {
       console.log('There was a problem with your fetch operation:', error);
     }
-  };
+  },[itemNumber]);
 
 
   useEffect(() => {
