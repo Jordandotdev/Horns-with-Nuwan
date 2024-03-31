@@ -4,7 +4,7 @@ import AlbumArt1 from '../../../../public/Albumart1.jpg';
 
 const AudioPlayer = () => {
   return (
-      <div className=' flex w-8/12  bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
+      <div className='mt-5 flex lg-w-8/12 bg-white shadow-md rounded-lg overflow-hidden mx-auto'>
         <div className="flex flex-col w-full">
             <div className="flex p-5 border-b">
             <Image className='w-20 h-20 object-cover' alt='User avatar' src={AlbumArt1}/>
