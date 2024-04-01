@@ -37,7 +37,7 @@ export default function NavComponent() {
 
     return (
         <nav className="fixed top-0 w-full z-50">
-            <div className="max-w-screen-xl flex flex-wrap justify-center items-center mx-auto p-4">
+            <div className="max-w-screen-xl flex flex-col justify-center items-center mx-auto p-4 gap-2">
                 {/* Hamburger Icon */}
                 <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
                     <div className="w-6 h-0.5 bg-black mb-1.5"></div>
@@ -46,11 +46,11 @@ export default function NavComponent() {
                 </button>
 
                 {/* Nav Links */}
-                <ul className={`${isOpen ? 'block' : 'hidden'} md:flex flex-col gap-2 bg-white backdrop-blur-md p-3 rounded-lg shadow-lg transition-all duration-500 ease-out hover:opacity-100 opacity-20 md:flex-row`}>
+                <ul className={`${isOpen ? 'block' : 'hidden'} md:flex flex-col gap-2 bg-white backdrop-blur-md p-3 rounded-lg shadow-lg transition-all duration-500 ease-out hover:opacity-100 lg:opacity-20 md:opacity-100 md:flex-row`}>
                     {links.map(link => {
                         return (
-                            <li key={link.path} className="md:inline-block">
-                                <Link className={cn("font-medium rounded-lg text-sm py-2 px-4 transition-all duration-500 ease-out hover:bg-slate-200",
+                            <li key={link.path} className="py-2 md:inline-block">
+                                <Link className={cn("flex items-center font-medium rounded-lg text-sm py-2 px-4 transition-all duration-500 ease-out hover:bg-slate-200",
                                     pathname === link.path ? "bg-slate-300" : ""
                                 )} href={link.path}>
                                     <span>{link.name}</span>
