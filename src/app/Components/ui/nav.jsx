@@ -55,7 +55,7 @@ export default function NavComponent() {
                 </button>
 
                 {/* Nav Links */}
-                <ul className={`${isOpen ? 'block' : 'hidden'} md:flex flex-cols-2 gap-2 bg-white backdrop-blur-md p-3 rounded-lg shadow-lg transition-all duration-500 ease-out hover:opacity-100 lg:opacity-20 md:opacity-100 md:flex-row`}>
+                <ul className={`${isOpen ? 'block' : 'hidden'} md:flex flex-cols-2 gap-2 bg-white backdrop-blur-md px-3 rounded-lg shadow-lg transition-all duration-500 ease-out hover:opacity-100 lg:opacity-20 md:opacity-100 md:flex-row`}>
                     {links.map(link => {
                         return (
                             <li key={link.path} className="py-2 md:inline-block">
