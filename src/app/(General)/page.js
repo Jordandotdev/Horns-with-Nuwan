@@ -4,7 +4,7 @@ import Audio from '../home-component/discover_audio.js';
 
 export default function Home() {
   return (    
-  <div className='bg-offwhite'>
+  <div className=' flex-col bg-offwhite'>
       <Hero/>
       <Audio/>
   </div>
