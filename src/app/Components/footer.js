@@ -19,10 +19,10 @@ export default function Footer(){
         <footer id="Footer" className="bg-offwhite rounded-lg shadow dark:bg-gray-900 m-4">
             <div className="w-full max-w-screen-xl mx-auto p-4 md:py-8">
                 <div className=" gap-8 sm:flex  sm:justify-between">
-                    <div className="flex  mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    {/* <div className="flex  mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
                         <img src="https://images.emojiterra.com/google/noto-emoji/unicode-15/color/512px/1f3ba.png" className="h-8" alt="Nuwan Logo" />
                         <span className=" text-2xl font-semibold whitespace-nowrap dark:text-white">Nuwan</span>
-                    </div>
+                    </div> */}
 
                         
                             <Card>

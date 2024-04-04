@@ -30,7 +30,7 @@ export default function NavComponent() {
           name: 'Majestic Horns',
         },
         {
-          path: '#Footer',
+          path: '/#Footer',
           name: 'Reach Out',
         },
       ];
