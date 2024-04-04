@@ -25,10 +25,10 @@ export default function NavComponent() {
           path: '/portfolio',
           name: 'Portfolio',
         },
-        {
-          path: '/about-me#Majestic',
-          name: 'Majestic Horns',
-        },
+        // {
+        //   path: '/about-me#Majestic',
+        //   name: 'Majestic Horns',
+        // },
         {
           path: '/#Footer',
           name: 'Reach Out',
