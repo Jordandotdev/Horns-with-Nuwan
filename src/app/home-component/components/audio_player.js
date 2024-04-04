@@ -10,7 +10,7 @@ const AudioPlayer = () => {
             <Image className='w-20 h-20 object-cover' alt='User avatar' src={AlbumArt1}/>
                 <div className="flex flex-col px-2 w-full">
                     <span className="text-sm text-gold capitalize font-semibold pt-1">
-                       Mystique Forest 2 
+                       Mystique Forest
                     </span>
                     <span className="text-xs text-gray-500 uppercase font-medium ">
                          Nuwan Gunawardhana
@@ -22,26 +22,27 @@ const AudioPlayer = () => {
             <div className="flex flex-col p-5">
                 
                     <div className="flex border-b py-3 cursor-pointer hover:shadow-md px-2 ">
-                        <iframe className='w-10 h-10' src="https://www.youtube.com/embed/_H7dlHRRD20" title="Little Sunflower Trumpet solo by Freddie Hubbard" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                        <a href='https://youtu.be/_H7dlHRRD20'>
+                      <iframe className='w-10 h-10' src="https://youtu.be/706fAoDh7So" title="Mystique Forest" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <a href='https://youtu.be/706fAoDh7So'>
                             <div className="flex flex-col px-2 w-full">
                                 
                                 <span className="text-sm text-gold capitalize font-semibold pt-1">
-                                Little Sunflower Trumpet solo    
+                                  Mystique Forest    
                                 </span>
                                 <span className="text-xs text-gray-500 uppercase font-medium ">
-                                Freddie Hubbard - Horns with Nuwan
+                                Nuwan Gunawardhana
                                 </span>
                             </div>
                         </a>
                     </div>
                 
                  <div className="flex border-b py-3 cursor-pointer hover:shadow-md px-2 ">
-                    <Image  className='w-10 h-10 object-cover rounded-lg' alt='User avatar'src={AlbumArt1}/>
-                    <div className="flex flex-col px-2 w-full">
+                      <iframe className='w-10 h-10' src="https://youtu.be/6XWVWH1tCzs" title="Waranayak - Instrumental Exerpt" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                      <a href='https://youtu.be/6XWVWH1tCzs'>
+                      <div className="flex flex-col px-2 w-full">
                         
                         <span className="text-sm text-gold capitalize font-semibold pt-1">
-                        Mystique Forest 2    
+                              Waranayak - Instrumental Exerpt    
                         </span>
                         <span className="text-xs text-gray-500 uppercase font-medium ">
                              Nuwan Gunawardhana
