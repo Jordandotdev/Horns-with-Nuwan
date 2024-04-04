@@ -47,7 +47,8 @@ const AudioPlayer = () => {
                         <span className="text-xs text-gray-500 uppercase font-medium ">
                              Nuwan Gunawardhana
                         </span>
-                    </div>
+                          </div>
+                          </a>
                 </div>
             </div>
         </div>
