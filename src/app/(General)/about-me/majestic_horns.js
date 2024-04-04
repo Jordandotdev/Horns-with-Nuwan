@@ -27,6 +27,7 @@ const majestic_horns = async ()  => {
                             <Image
                             className="rounded-lg"
                             src={Horns1}
+                            placeholder="blur" 
                             layout="responsive"
                             objectFit="cover"
                             quality={75} 
@@ -39,6 +40,7 @@ const majestic_horns = async ()  => {
                             <Image
                             className="rounded-lg"
                             src={Horns2}
+                            placeholder="blur" 
                             layout="responsive"
                             objectFit="cover"
                             quality={75} // Adjust quality as needed

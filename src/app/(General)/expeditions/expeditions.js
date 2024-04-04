@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import Prashan1 from '../../../../public/jpg1.jpg';
+import Prashan1 from '../../../../public/jpg4.jpg';
 import { Button } from "../../Components/ui/button.jsx"
 import config from '../../../config.js';
 
@@ -22,7 +22,8 @@ return(
         <div className="gap-16 items-center  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2  lg:px-6">
         <div className="relative aspect-w-1 aspect-h-1 mt-2 md:mt-4">
             <Image
-                  className="rounded-lg h-auto max-h-[700px] object-cover object-top lg:max-w-[450px] "
+                  className="rounded-lg  h-screen max-h-[700px] object-cover object-center lg:max-w-[450px] "
+                  placeholder="blur" 
                   src={Prashan1}
                   quality={75}   
                   alt="Image description"

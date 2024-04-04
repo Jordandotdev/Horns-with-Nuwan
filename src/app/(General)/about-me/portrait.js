@@ -36,6 +36,7 @@ return(
           <Image
               className="rounded-lg h-auto max-h-[700px] object-cover object-top lg:max-w-[450px] "
               src={Nuwan3}
+              placeholder="blur" 
               quality={75}   
               alt="Image description"
           />
