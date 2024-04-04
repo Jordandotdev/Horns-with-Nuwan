@@ -8,8 +8,8 @@ export default function hero() {
                 <Image
                   src={Mainbg}
                     alt="Main"
-                    objectFit="cover"
                     placeholder="blur" 
+                    className="w-full h-screen object-cover object-center "
                 />
             </section>
         </div>
