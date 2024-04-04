@@ -28,16 +28,16 @@ const discover_audio = async () => {
                            {Discover.data.attributes.Paragraph2}
                         </p>
                         <div className='flex mt-8 space-x-4 lg:justify-start md:justify-start sm:justify-center' alt='Social-Icons'>
-                            <a href="https://www.instagram.com/majestichorns/" target="_blank">
+                            {/* <a href="https://www.instagram.com/majestichorns/" target="_blank">
                                 <img className='rounded-lg h-8 w-auto transform transition-transform duration-500 ease-in-out hover:scale-110' src="https://img.shields.io/static/v1?message=Spotify&logo=Spotify&label=&color=0F172A&logoColor=white&labelColor=&style=for-the-badge"  alt="instagram logo"  />
                             </a>
                             <a href="https://www.facebook.com/majestichorns" target="_blank">
                                 <img className='rounded-lg h-8 w-auto transform transition-transform duration-500 ease-in-out hover:scale-110' src="https://img.shields.io/static/v1?message=Apple%20Music&logo=AppleMusic&label=&color=0F172A&logoColor=white&labelColor=&style=for-the-badge"  alt="gmail logo"  />
-                            </a>
+                            </a> */}
                         </div>
                     </div>
                     <div>
-                        <AudioPlayer/>
+                        {/* <AudioPlayer/> */}
                     </div>
                 </div>
             </section>
