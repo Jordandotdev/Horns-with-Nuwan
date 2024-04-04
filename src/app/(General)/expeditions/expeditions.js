@@ -35,7 +35,7 @@ return(
                 {Expeditions.data.attributes.Paragraph1}
             </p>
             <p>
-                {Expeditions.data.attributes.Paragraph1}
+                {Expeditions.data.attributes.Paragraph2}
             </p>
             <a href='#Exploratory'>
             <Button   className="mt-4" >View More Bellow</Button>
