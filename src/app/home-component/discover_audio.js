@@ -37,7 +37,7 @@ const discover_audio = async () => {
                         </div>
                     </div>
                     <div>
-                        {/* <AudioPlayer/> */}
+                             <AudioPlayer/>
                     </div>
                 </div>
             </section>
