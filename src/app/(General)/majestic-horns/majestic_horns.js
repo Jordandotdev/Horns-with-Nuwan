@@ -22,10 +22,10 @@ const majestic_horns = async ()  => {
             <section id="Majestic" className="bg-offwhite px-4 py-8">
             <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6"> 
                     <div>
-                    <div className="grid grid-cols-2 gap-4 mt-8">
+                    <div className="grid grid-cols-2 gap-4 mt-8 ">
                         <div className="relative aspect-w-16 aspect-h-9">
                             <Image
-                            className="rounded-lg h-screen max-h-[400px] object-cover object-center lg:max-w-1/2"
+                            className="rounded-lg h-screen max-h-[200px] max-w-1/3  sm:max-h-[400px] sm:max-w-1/2 object-cover object-center  "
                             src={Horns1}
                             placeholder="blur" 
                             quality={75} 
@@ -35,7 +35,7 @@ const majestic_horns = async ()  => {
 
                         <div className="relative aspect-w-16 aspect-h-9 mt-4 md:mt-8">
                         <Image
-                            className="rounded-lg h-screen max-h-[400px] object-cover object-center lg:max-w-1/2"
+                            className="rounded-lg h-screen max-h-[200px] max-w-1/3  sm:max-h-[400px] sm:max-w-1/2 object-cover object-center "
                             src={Horns2}
                             placeholder="blur" 
                             quality={75} 
