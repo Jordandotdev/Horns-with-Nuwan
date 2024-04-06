@@ -37,7 +37,7 @@ export default function Projects({ item }) {
 
   useEffect(() => {
     getProjects();
-  });
+  },[]);
 
   const incrementOnClick = () => {
     setItemNumber(itemNumber + 6);
