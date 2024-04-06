@@ -1,6 +1,6 @@
 import Image from "next/image";
-import Horns1 from '../../../../public/Horns1.jpg';
-import Horns2 from '../../../../public/Horns2.jpg';
+import Horns1 from '../../../../public/Horns3.jpg';
+import Horns2 from '../../../../public/Horns4.jpg';
 import config from '../../../config.js';
 
 const fetchHorns = async () => {
@@ -25,26 +25,21 @@ const majestic_horns = async ()  => {
                     <div className="grid grid-cols-2 gap-4 mt-8">
                         <div className="relative aspect-w-16 aspect-h-9">
                             <Image
-                            className="rounded-lg"
+                            className="rounded-lg h-screen max-h-[400px] object-cover object-center lg:max-w-1/2"
                             src={Horns1}
                             placeholder="blur" 
-                            layout="responsive"
-                            objectFit="cover"
                             quality={75} 
-                            priority 
                             alt="Image description" 
                             />
                         </div>
 
                         <div className="relative aspect-w-16 aspect-h-9 mt-4 md:mt-8">
-                            <Image
-                            className="rounded-lg"
+                        <Image
+                            className="rounded-lg h-screen max-h-[400px] object-cover object-center lg:max-w-1/2"
                             src={Horns2}
                             placeholder="blur" 
-                            layout="responsive"
-                            objectFit="cover"
-                            quality={75} // Adjust quality as needed
-                            alt="Image description" // Always provide an alt attribute for accessibility
+                            quality={75} 
+                            alt="Image description" 
                             />
                         </div>
                     </div>
