@@ -2,18 +2,16 @@
 
 import { Button } from "./ui/button.jsx";
 import Image from "next/image.js";
-import Prashan1 from "../../../public/Nuwan2.jpg";
 
 const ProjectTemp = ({project}) => {
+
+    const PicLink = 'https://nuwan-backend-k4wxw.ondigitalocean.app/uploads/projects/' + project.attributes.ProjectImage + '.jpg';
+
     return (
         <section className="m-2 font-sans leading-normal flex h-auto">
         <div className="bg-white max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
           <div className="h-48 sm:h-auto sm:w-80 md:w-140 flex-wrap rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat">
-            {/* {project.attributes.ProjectLink ? (
-              <Image src={Prashan1} className="w-full h-auto object-cover" alt="Prashan1" />
-            ) : (
-               <iframe className='w-20 h-20' src={`${project.attributes.ProjectLink}`} allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"></iframe>
-            )} */}
+          {/* <Image width="200" height="200" src={PicLink} alt={project.attributes.ProjectName} /> */}
           </div>
           <div className="px-6 py-4">
             <h2 className="mb-2 font-black">
@@ -41,3 +39,4 @@ const ProjectTemp = ({project}) => {
 }
 
 export default ProjectTemp;
+

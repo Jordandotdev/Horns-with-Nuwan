@@ -31,7 +31,7 @@ const AudioPlayer = () => {
                         <iframe className='w-20 h-20' src="https://www.youtube.com/embed/6XWVWH1tCzs"   allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" ></iframe>
                                 <div className="flex flex-col px-2 w-full">
                                     <span className="text-sm text-gold capitalize font-semibold pt-1">
-                                        Waranayak - Instrumental Exerpt    
+                                        Waranayak - Instrumental Expert   
                                     </span>
                                     <span className="text-xs text-gray-500 uppercase font-medium ">
                                         Nuwan Gunawardhana
