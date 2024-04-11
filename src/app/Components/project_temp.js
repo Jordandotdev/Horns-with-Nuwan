@@ -3,6 +3,7 @@
 import { Button } from "./ui/button.jsx";
 import Image from "next/image.js";
 
+
 const ProjectTemp = ({project}) => {
 
     const PicLink = 'https://nuwan-backend-k4wxw.ondigitalocean.app/uploads/Whats_App_Image_2024_01_16_at_13_13_35_4e637c3150.jpeg';
@@ -11,7 +12,7 @@ const ProjectTemp = ({project}) => {
         <section className="m-2 font-sans leading-normal flex h-auto">
         <div className="bg-white max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
           <div className="h-48 sm:h-auto sm:w-80 md:w-140 flex-wrap rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat">
-          <Image width="800" height="800" src={project.attributes.ProjectLink} alt={project.attributes.ProjectName} />
+          <Image className="object-cover w-fit h-full " width="1000" height="1000" src={PicLink} alt={project.attributes.ProjectName} />
           </div>
           <div className="px-6 py-4">
             <h2 className="mb-2 font-black">
