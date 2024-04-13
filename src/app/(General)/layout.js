@@ -3,7 +3,7 @@ import Footer from "../Components/footer.js";
 import Nav from '../Components/nav.js';
 
 export const metadata = {
-  title: 'Welcome',
+  title: 'Nuwan Gunawardhana',
   description: 'Welcome to my personal website!',
 };
 
