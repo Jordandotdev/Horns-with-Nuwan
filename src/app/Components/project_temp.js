@@ -10,9 +10,9 @@ const ProjectTemp = ({project}) => {
 
     return (
         <section className="m-2 font-sans leading-normal flex h-auto">
-        <div className="bg-white max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
+        <div className="bg-white max-h-lg max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
           <div className="h-48 sm:h-auto sm:w-80 md:w-140 flex-wrap rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat">
-          <Image className="object-cover w-fit h-full " width="1000" height="1000" src={PicLink} alt={project.attributes.ProjectName} />
+          <Image className="object-cover w-fit h-full" width="1000" height="1000" src={PicLink} alt={project.attributes.ProjectName} />
           </div>
           <div className="px-6 py-4">
             <h2 className="mb-2 font-black">
@@ -21,17 +21,18 @@ const ProjectTemp = ({project}) => {
             <h3 className="mb-2 text-gold text-sm">
               {project.attributes.ProjectDate}            
             </h3>
-            {project.attributes.categories.data.map((category) => (
-              <Button className='mr-1 mb-4' variant="outline" key={category.id}>
-                {category.attributes.ProjectCategories}
-              </Button>
-            ))}
             <p className="mb-4 text-grey-dark text-sm">
               {project.attributes.Description}  
             </p>
-            
+            <div className="flex flex-wrap">
+            {project.attributes.categories.data.map((category) => (
+              <div className=" text-sm font-normal mr-1 p-1  border-2 border-gray-400 rounded-lg  text-gray-800" key={category.id}>
+                {category.attributes.ProjectCategories}
+              </div>
+            ))}
+            </div>
             <a href={project.attributes.ProjectLink}>
-              <Button>View</Button>  
+              <Button className='mt-4'>View</Button>  
             </a>
           </div>
         </div>
