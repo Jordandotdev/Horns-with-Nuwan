@@ -7,9 +7,9 @@ const ProjectTemp = ({project}) => {
 
     
     return (
-      <section className="m-2 font-sans leading-normal flex h-auto">
+      <section className="m-2 font-sans leading-normal flex h-auto md:justify-center">
       <div className="bg-white max-h-lg max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
-        <div className="h-48 w-40 sm:h-auto flex-wrap rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-gray-800 bg-cover bg-center bg-no-repeat">
+        <div className="h-48 md:w-40 sm:30 sm:h-auto flex-wrap rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-gray-800 bg-cover bg-center bg-no-repeat">
          
         </div>
         <div className="px-6 py-4">
