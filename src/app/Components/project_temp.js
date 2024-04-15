@@ -24,7 +24,7 @@ const ProjectTemp = ({project}) => {
           </p>
           <div className="flex flex-wrap">
           {project.attributes.categories.data.map((category) => (
-            <div className=" text-xs font-normal mr-1 p-1  border border-gray-400 rounded-lg  text-gray-800" key={category.id}>
+            <div className=" text-xs font-normal mr-0.5 p-1  rounded-lg  text-gray-600" key={category.id}>
               #{category.attributes.ProjectCategories}
             </div>
           ))}
