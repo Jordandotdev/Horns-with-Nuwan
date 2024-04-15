@@ -7,32 +7,34 @@ const ProjectTemp = ({project}) => {
 
     
     return (
-        <section className="m-2 font-sans leading-normal flex h-auto">
-        <div className="bg-white max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
-          <div className="h-48 sm:h-auto sm:w-80 md:w-140 flex-wrap rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat">
-          </div>
-          <div className="px-6 py-4">
-            <h2 className="mb-2 font-black">
-              {project.attributes.ProjectName}
-            </h2>
-            <h3 className="mb-2 text-gold text-sm">
-              {project.attributes.ProjectDate}            
-            </h3>
-            {project.attributes.categories.data.map((category) => (
-              <Button className='mr-1 mb-4' variant="outline" key={category.id}>
-                {category.attributes.ProjectCategories}
-              </Button>
-            ))}
-            <p className="mb-4 text-grey-dark text-sm">
-              {project.attributes.Description}  
-            </p>
-            
-            <a href={project.attributes.ProjectLink}>
-              <Button>View</Button>  
-            </a>
-          </div>
+      <section className="m-2 font-sans leading-normal flex h-auto">
+      <div className="bg-white max-h-lg max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
+        <div className="h-48 w-40 sm:h-auto flex-wrap rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-gray-800 bg-cover bg-center bg-no-repeat">
+         
         </div>
-      </section>
+        <div className="px-6 py-4">
+          <h2 className="mb-2 font-black">
+            {project.attributes.ProjectName}
+          </h2>
+          <h3 className="mb-2 text-gold text-sm">
+            {project.attributes.ProjectDate}            
+          </h3>
+          <p className="mb-4 text-grey-dark text-sm">
+            {project.attributes.Description}  
+          </p>
+          <div className="flex flex-wrap">
+          {project.attributes.categories.data.map((category) => (
+            <div className=" text-sm font-normal mr-1 p-1  border-2 border-gray-400 rounded-lg  text-gray-800" key={category.id}>
+              {category.attributes.ProjectCategories}
+            </div>
+          ))}
+          </div>
+          <a href={project.attributes.ProjectLink}>
+            <Button className='mt-4'>View</Button>  
+          </a>
+        </div>
+      </div>
+    </section>
     );
 }
 
