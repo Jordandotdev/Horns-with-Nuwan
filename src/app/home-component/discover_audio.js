@@ -20,7 +20,7 @@ const discover_audio = async () => {
             <section className="bg-offwhite px-4 py-4">
                 <div className="gap-16 items-center py-8 px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2 lg:py-16 lg:px-6">
                     <div className="font-light text-gray-500 sm:text-lg dark:text-gray-400">
-                        <h2 className="mb-4 text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Discover</h2>
+                        <h2 className="mb-4 text-2xl md:text-6xl tracking-tight font-extrabold text-gray-900 dark:text-white">Discover</h2>
                         <p className="mb-4">
                             {Discover.data.attributes.Paragraph1}
                         </p>

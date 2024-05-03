@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { cn } from '@/lib/utils';
+import { cn } from '../../../lib/utils.js';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import Image from 'next/image'; 

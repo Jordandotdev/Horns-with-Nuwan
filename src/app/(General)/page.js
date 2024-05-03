@@ -1,6 +1,5 @@
 import Hero from '../home-component/hero.js';
 import Audio from '../home-component/discover_audio.js';
-import { wait } from '@/lib/utils.js';
 
 
 const Home = async () => {

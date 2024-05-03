@@ -11,9 +11,10 @@ if (loadP){
         yPercent:0,
     }).to(loadP,{
         yPercent:100,
+        opacity:0,
         duration:1,
         ease:"power1.inOut",
-        delay:1
+        delay:3,
     })
 }
 }

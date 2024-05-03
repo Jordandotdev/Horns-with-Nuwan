@@ -6,8 +6,8 @@ export function cn(...inputs) {
 }
 
 //function to await the server action
-export async function wait(ms) {
-  return new Promise((resolve) => {
-    setTimeout(resolve, ms)
-  })
-}
+// export async function wait(ms) {
+//   return new Promise((resolve) => {
+//     setTimeout(resolve, ms)
+//   })
+// }
