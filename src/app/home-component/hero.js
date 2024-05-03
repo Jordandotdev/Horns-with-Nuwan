@@ -9,6 +9,7 @@ export default function hero() {
                 <Image
                     src={Mainbg}
                     alt="Main"
+                    //write a funciton instead of the blur for a spinner with the quote
                     placeholder="blur"
                     className="w-full h-screen object-cover object-center"
                 />

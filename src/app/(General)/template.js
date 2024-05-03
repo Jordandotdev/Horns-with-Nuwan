@@ -4,15 +4,10 @@ import { useEffect } from "react";
 import { LoadAnim } from "../../lib/loadinganim.js";
 
 export default function Template({ children }) {
-  useEffect(() => {
-    //if statement to check if the page is loaded from the cache
-    if(window.performance.navigation.type !== 1){
+  useEffect(() => { 
       LoadAnim();
-    }else{
-      document.getElementById("load").style.display = "none";
-    }
-    
   }, []);
+  
   return (
     <div>
       <div id="load" className="fixed top-0 z-50 h-screen bg-gray-200">
