@@ -3,7 +3,6 @@
 import  Projects  from '../action.js';
 
 const Portfolio = () => {
-
   const numberItems = 3;
 
   return (

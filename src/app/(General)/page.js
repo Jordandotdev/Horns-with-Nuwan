@@ -5,8 +5,6 @@ import { wait } from '@/lib/utils.js';
 
 const Home = async () => {
 
-  await wait(1000)
-
   return (    
   <div className=' flex-col bg-offwhite'>
       <Hero/>
