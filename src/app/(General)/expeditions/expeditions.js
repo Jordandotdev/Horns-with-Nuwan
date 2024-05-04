@@ -2,6 +2,7 @@ import Image from 'next/image';
 import Prashan1 from '../../../../public/jpg4.jpg';
 import { Button } from "../../Components/ui/button.jsx"
 import config from '../../../config.js';
+import Arrow from '../../../../public/icons/right-arrow-svgrepo-com.svg';
 
 const fetchExpeditions = async () => {
     const reqOptions = {
@@ -38,7 +39,9 @@ return(
                 {Expeditions.data.attributes.Paragraph2}
             </p>
             <a href='#Exploratory'>
-            <Button   className="mt-4" >View More Bellow</Button>
+            <Button   className="mt-4" >
+              <Image  src={Arrow} alt='Arrow' className='h-8 w-8 inline-block p-1' />
+            </Button>
             </a>
             </div>
         </div>

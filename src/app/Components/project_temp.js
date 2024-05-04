@@ -11,10 +11,10 @@ const ProjectTemp = ({project}) => {
     return (
       <section className="m-2 font-sans leading-normal flex h-auto">
       <div className="bg-white max-h-lg max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
-        <div className="h-48 w-40 sm:h-auto flex-wrap rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden  bg-cover bg-center bg-no-repeat">
+        <div className="h-48 w-48 sm:h-auto rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat">
           <Image className="object-cover w-fit h-full" width="1000" height="1000" src={PicLink} alt={project.attributes.ProjectName} />
         </div>
-        <div className="px-6 py-4">
+        <div className="px-6 py-4 ">
           <h2 className="mb-2 font-black">
             {project.attributes.ProjectName}
           </h2>
