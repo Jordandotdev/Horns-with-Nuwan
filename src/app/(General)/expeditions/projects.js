@@ -9,7 +9,7 @@ export default async function projects() {
     return(
         <section id="Exploratory" className="mt-14">
             <div id="main_port" className="bg-offwhite item-center ">
-                <div className=" flex  mb-4 justify-center text-5xl pt-6 px-4 mx-auto max-w-screen-xl font-extrabold text-gray-900 dark:text-white">
+                <div className=" flex  mb-4 justify-center text-3xl md:text-5xl pt-6 px-4 mx-auto max-w-screen-xl font-extrabold text-gray-900 dark:text-white">
                 Exploratory Projects 
                 </div> 
                 <div className="flex flex-wrap justify-center items-center mx-auto max-w-screen-xl">
