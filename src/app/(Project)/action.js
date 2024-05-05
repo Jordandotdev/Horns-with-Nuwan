@@ -6,7 +6,7 @@ import ProjectTemp from '../../app/Components/project_temp.js';
 import { Button } from '../Components/ui/button.jsx';
 
 
-export default function Projects({ item }) {
+export default function Projects() {
   const [posts, setPosts] = useState(null);
   const pageNumber = 1;
   const [itemNumber, setItemNumber] = useState(6);
@@ -19,7 +19,7 @@ export default function Projects({ item }) {
   const getProjects = useCallback( async () => {
     try {
        const response = await fetch(
-        `${config.api}/api/projects?populate=*&publicationState=live&locale[0]=en&pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}`,
+        `${config.api}/api/projects?populate=*&pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}`,
         reqOptions
       )
       if (response.ok) {

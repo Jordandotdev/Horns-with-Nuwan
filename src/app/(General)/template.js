@@ -5,6 +5,7 @@ import { LoadAnim } from "../../lib/loadinganim.js";
 
 export default function Template({ children }) {
   useEffect(() => { 
+      
       LoadAnim();
   }, []);
 

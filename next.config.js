@@ -7,6 +7,10 @@ const nextConfig = {
                 hostname: '127.0.0.1',
             },
             {
+                protocol: 'http',
+                hostname: 'localhost',
+            },
+            {
                 protocol: 'https',
                 hostname: 'nuwan-backend-k4wxw.ondigitalocean.app',
             },

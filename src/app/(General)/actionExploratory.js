@@ -2,8 +2,7 @@
 
 import config from '../../config.js';
 
-export const FetchProjectsExploratory = async (page, items) => {
- const pageNumber = Number(page);
+export const FetchProjectsExploratory = async (items) => {
  const itemNumber = Number(items);
  const reqOptions = {
       headers: {
@@ -13,7 +12,7 @@ export const FetchProjectsExploratory = async (page, items) => {
       cache: 'no-store', 
  };
  try {
-    const response = await fetch(`${config.api}/api/projects?populate=*&publicationState=live&locale[0]=en&pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}`, reqOptions);
+    const response = await fetch(`${config.api}/api/projects?populate=*&pagination[pageSize]=${itemNumber}`, reqOptions);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }

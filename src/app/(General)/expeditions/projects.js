@@ -4,7 +4,7 @@ import { FetchProjectsExploratory } from "../actionExploratory.js";
 
 export default async function projects() {
 
-    const projects = await FetchProjectsExploratory(1, 4);
+    const projects = await FetchProjectsExploratory(4);
 
     return(
         <section id="Exploratory" className="mt-14">
