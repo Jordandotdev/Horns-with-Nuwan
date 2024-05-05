@@ -6,7 +6,7 @@ import config from "../../config.js";
 
 const ProjectTemp = ({ project }) => {
   return (
-    <section className="m-2 font-sans leading-normal items-center">
+    <section className="m-2 font-sans leading-normal">
       <div className="bg-white max-h-lg max-w-lg shadow-lg rounded overflow-hidden m-4">
         <div className="relative h-60 sm:48 md:20  rounded-lg">
           <Image
