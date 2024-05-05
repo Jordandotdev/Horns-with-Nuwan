@@ -6,13 +6,12 @@ import config from "../../config.js";
 
 const ProjectTemp = ({ project }) => {
   return (
-    <section className="m-2 font-sans leading-normal flex h-auto">
-      <div className="bg-white max-h-lg max-w-xl shadow-lg rounded overflow-hidden m-4 sm:flex md:flex">
-        <div className="h-48 w-48 sm:h-auto rounded rounded-t sm:rounded sm:rounded-l text-center overflow-hidden bg-cover bg-center bg-no-repeat">
+    <section className="m-2 font-sans leading-normal items-center">
+      <div className="bg-white max-h-lg max-w-lg shadow-lg rounded overflow-hidden m-4">
+        <div className="relative h-60 sm:48 md:20  rounded-lg">
           <Image
-            className="object-cover w-fit h-full"
-            width="1000"
-            height="1000"
+            className="object-cover w-full h-full"
+            fill={true}
             src={`${config.api}${project.attributes.Image.data.attributes.url}`}
             alt={project.attributes.ProjectName}
           />
