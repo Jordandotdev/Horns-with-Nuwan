@@ -22,7 +22,7 @@ const expeditions = async () => {
   return (
     <section className="bg-offwhite px-4 py-4 mt-16">
       <div className="gap-16 items-center  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2  lg:px-6">
-        <div className="relative h-screen max-h-[700px] lg:max-w-[450px] aspect-w-1 aspect-h-1 mt-2 md:mt-4">
+        <div className="relative h-screen max-h-[400px] sm:max-h-[700px] lg:max-w-[450px] aspect-w-1 aspect-h-1 mt-2 md:mt-4">
           <Image
             className="rounded-lg object-cover object-center"
             fill={true}

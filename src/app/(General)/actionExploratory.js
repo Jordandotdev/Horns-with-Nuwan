@@ -12,7 +12,7 @@ export const FetchProjectsExploratory = async (items) => {
       cache: 'no-store', 
  };
  try {
-    const response = await fetch(`${config.api}/api/projects?populate=*&pagination[pageSize]=${itemNumber}`, reqOptions);
+    const response = await fetch(`${config.api}/api/projects?populate=*&pagination[pageSize]=${itemNumber}&filters[categories][ProjectCategories][$contains]=Exploratory`, reqOptions);
     if (!response.ok) {
       throw new Error('Network response was not ok');
     }

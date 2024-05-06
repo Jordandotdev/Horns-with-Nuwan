@@ -14,9 +14,7 @@ export default async function projects() {
                 </div> 
                 <div className="flex flex-wrap justify-center items-center mx-auto max-w-screen-xl">
                     {projects && projects.data && projects.data.map((props) => (
-                        
                             <Expeditions  key={props.id} project={props} />
-                        
                     ))}
                 </div>
                 
