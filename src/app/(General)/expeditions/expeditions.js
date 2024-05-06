@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Prashan1 from "../../../../public/jpg4.jpg";
 import { Button } from "../../Components/ui/button.jsx";
 import config from "../../../config.js";
 import Arrow from "../../../../public/icons/right-arrow-svgrepo-com.svg";
