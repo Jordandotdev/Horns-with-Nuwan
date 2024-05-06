@@ -37,12 +37,12 @@ const ProjectTemp = ({ project }) => {
         <div className="px-6 py-4 ">
           <h2 className="mb-2 font-black">{project.attributes.ProjectName}</h2>
           <div className="flex flex-row gap-2 items-center">
-            <h3 className="mb-2 text-gold text-sm">
+            <h3 className="mb-2 text-gold text-md">
               {projectStartDate}
             </h3>
             {/* Conditionally render the date difference with style */}
             {dateDiff > 0 && (
-              <h3 className="mb-2 text-white p-1 rounded-xl bg-gray-800 text-sm">
+              <h3 className="mb-2 text-black p-1 rounded-lg text-sm border-2 border-gray-400">
                 {dateDiff} days
               </h3>
             )}
