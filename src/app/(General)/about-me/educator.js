@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Educator from "../../../../public/educator.jpg";
 import config from "../../../config.js";
 
 const fetchEducator = async () => {
