@@ -25,7 +25,7 @@ const educator = async () => {
   return (
     <section className="bg-offwhite px-4 py-4 ">
       <div className="gap-16 items-center  px-4 mx-auto max-w-screen-xl lg:grid lg:grid-cols-2  lg:px-6">
-        <div className="relative h-screen max-h-[400px] sm:max-h-[600px] lg:max-h-[700px] max-w-1/3 sm:max-w-1/2 aspect-w-16 aspect-h-9">
+        <div className="relative h-screen max-h-[400px] sm:max-h-[500px] lg:max-h-[600px] max-w-1/3 sm:max-w-1/2 aspect-w-16 aspect-h-9">
           <Image
             className="rounded-lg  object-cover object-top "
             src={`${config.api}${ImageURL1}`}
