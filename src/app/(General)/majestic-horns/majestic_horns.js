@@ -1,6 +1,4 @@
 import Image from "next/image";
-import Horns1 from '../../../../public/Horns3.jpg';
-import Horns2 from '../../../../public/Horns4.jpg';
 import config from '../../../config.js';
 
 const fetchHorns = async () => {
