@@ -3,7 +3,6 @@
 import '../globals.css';
 import Footer from "../Components/footer.js";
 import Nav from '../Components/nav.js';
-import Portfolio from './portfolio/page';
 import Projects from './action.js'
 
 export default function RootLayout() {
@@ -13,7 +12,7 @@ export default function RootLayout() {
     <html lang="en">
       <body className='bg-offwhite'>
         <Nav />
-          <div className='mt-16'>
+          <div className='mt-16 flex flex-col justify-center'>
             <Projects items={items} />
           </div>
         <Footer />
