@@ -1,8 +1,8 @@
 import Hero from '../home-component/hero.js';
 import Audio from '../home-component/discover_audio.js';
 
+const Home = async () => {
 
-export default function Home() {
   return (    
   <div className=' flex-col bg-offwhite'>
       <Hero/>
@@ -10,3 +10,5 @@ export default function Home() {
   </div>
   )
 }
+
+export default Home;
