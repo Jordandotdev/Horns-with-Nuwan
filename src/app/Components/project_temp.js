@@ -69,7 +69,7 @@ const ProjectTemp = ({ project }) => {
               </h3>
             )}
           </div>
-          <p className="mb-4 text-grey-dark text-sm">
+          <p className="mb-4 text-grey-dark text-sm h-38 md:h-28 lg:h-24">
             {project.attributes.Description}
           </p>
           <div className="flex flex-wrap">

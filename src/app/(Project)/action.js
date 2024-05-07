@@ -6,20 +6,24 @@ import ProjectTemp from '../../app/Components/project_temp.js';
 import { Button } from '../Components/ui/button.jsx';
 
 
-export default function Projects() {
+export default function Projects(passedFilter) {
+
+  const filteredCategory = '';
   const [posts, setPosts] = useState(null);
   const pageNumber = 1;
   const [itemNumber, setItemNumber] = useState(6);
+
   const reqOptions ={
     headers: {
       Authorization: `Bearer ${process.env.NEXT_PUBLIC_API_TOKEN}`
     },
     cache: 'no-store',
   }
+
   const getProjects = useCallback( async () => {
     try {
        const response = await fetch(
-        `${config.api}/api/projects?populate=*&pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}`,
+        `${config.api}/api/projects?populate=*&pagination[pageSize]=${itemNumber}&pagination[page]=${pageNumber}&filters[categories][ProjectCategories][$contains]=${filteredCategory}`,
         reqOptions
       )
       if (response.ok) {
@@ -43,7 +47,6 @@ export default function Projects() {
     setItemNumber(itemNumber + 6);
     getProjects();
   }
-
   return (
     <>
       <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-4 items-center py-4 px-4 mx-auto max-w-screen-l">

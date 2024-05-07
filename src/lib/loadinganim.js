@@ -1,5 +1,4 @@
 import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
 
 export const LoadAnim = (delayDuration) => {
 const loadP = document.getElementById("load");
