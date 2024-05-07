@@ -5,7 +5,7 @@ import { LoadAnim } from "../../lib/loadinganim.js";
 
 export default function Template({ children }) {
   useEffect(() => {
-    const delayDuration = 3;
+    const delayDuration = 5;
     LoadAnim(delayDuration);
   }, []);
 
