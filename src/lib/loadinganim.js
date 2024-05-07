@@ -1,7 +1,7 @@
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
-export const LoadAnim = () => {
+export const LoadAnim = (delayDuration) => {
 const loadP = document.getElementById("load");
 
 if (loadP){
@@ -14,7 +14,7 @@ if (loadP){
         opacity:0,
         duration:1,
         ease:"power1.inOut",
-        delay:3,
+        delay:delayDuration,
     })
 }
 }

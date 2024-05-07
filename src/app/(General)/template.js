@@ -4,12 +4,12 @@ import { useEffect } from "react";
 import { LoadAnim } from "../../lib/loadinganim.js";
 
 export default function Template({ children }) {
-  useEffect(() => { 
-      
-      LoadAnim();
-  }, []);
+ useEffect(() => { 
+    const delayDuration = 3;
+    LoadAnim(delayDuration);
+ }, []);
 
-  return (
+ return (
     <div>
       <div id="load" className="fixed top-0 z-50 h-screen bg-gray-200">
         <div className="flex flex-grow items-center justify-center align-middle text-center h-full">
@@ -23,5 +23,5 @@ export default function Template({ children }) {
       </div>
       {children}
     </div>
-  );
+ );
 }
