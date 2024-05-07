@@ -1,7 +1,6 @@
 import Majestic from './majestic_horns.js';
 
-export default function majestic_horns({ pageValue }) {
-  console.log(`Page Value: ${pageValue}`);
+export default function majestic_horns() {
   
   return (
     <div>
