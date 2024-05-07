@@ -1,5 +1,5 @@
 const config = {
-    api: 'http://localhost:1337',
+    api: 'https://nuwan-backend-k4wxw.ondigitalocean.app',
 }
 
 export default config;
