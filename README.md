@@ -1,3 +1,21 @@
+
+# Next.JS 
+
+HornswithNuwan is a web-applicaiton created using Next.JS with the backend created on Strapi. This project was to show off Next.JS's ability to render both client side and server side, being able to handle api requests on client and on server (using)
+
+[![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat&logo=next.js&logoColor=white)](https://nextjs.org/)
+[![Strapi](https://img.shields.io/badge/Strapi-2E7EEA?style=flat&logo=strapi&logoColor=white)](https://strapi.io/)
+[![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat&logo=vercel&logoColor=white)](https://vercel.com/)
+[![DigitalOcean](https://img.shields.io/badge/DigitalOcean-0080FF?style=flat&logo=digitalocean&logoColor=white)](https://www.digitalocean.com/)
+
+## Link to Live site
+
+https://www.hornswithnuwan.com/
+
+
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
