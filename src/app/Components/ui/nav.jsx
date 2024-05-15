@@ -25,10 +25,11 @@ export default function NavComponent() {
           path: '/portfolio',
           name: 'Portfolio',
         },
-        {
-          path: '/majestic-horns',
-          name: 'Majestic Horns',
-        },
+        //majestic horn removed for now
+        // { 
+        //   path: '/majestic-horns',
+        //   name: 'Majestic Horns',
+        // },
         {
           path: '/#Footer',
           name: 'Reach Out',
