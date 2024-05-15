@@ -10,7 +10,10 @@ const fetchExpeditions = async () => {
     },
     cache: "no-store",
   };
-  const response = await fetch(`${config.api}/api/expedition?populate=*`, reqOptions);
+  const response = await fetch(
+    `${config.api}/api/expedition?populate=*`,
+    reqOptions
+  );
   const resData = await response.json();
   console.log("Expeditions: ", resData.data);
   return resData;
@@ -38,12 +41,16 @@ const expeditions = async () => {
           <p className="mb-4">{Expeditions.data.attributes.Paragraph1}</p>
           <p>{Expeditions.data.attributes.Paragraph2}</p>
           <a href="#Exploratory">
-            <Button className="mt-4">
-              <Image
+            <Button className="mt-4 ">
+              {/* center the dots */}
+              <div className="text-2xl flex justify-center items-center">
+                ...
+              </div>
+              {/* <Image
                 src={Arrow}
                 alt="Arrow"
                 className="h-8 w-8 inline-block p-1"
-              />
+              /> */}
             </Button>
           </a>
         </div>
