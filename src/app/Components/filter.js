@@ -1,6 +1,6 @@
 "use client";
 
-export default () => {
+const FilterComponent = () => {
   return (
     <div className="relative group rounded-lg w-64 bg-neutral-700 overflow-hidden before:absolute before:w-12 before:h-12 before:content[''] before:right-0 before:bg-violet-500 before:rounded-full before:blur-lg before:[box-shadow:-60px_20px_10px_10px_#F9B0B9]">
       <svg
@@ -32,3 +32,7 @@ export default () => {
     </div>
   );
 };
+
+FilterComponent.displayName = 'Filter';
+
+export default FilterComponent;
