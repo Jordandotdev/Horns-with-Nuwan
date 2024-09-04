@@ -1,5 +1,5 @@
 const config = {
-    api: 'https://nuwan-backend-k4wxw.ondigitalocean.app',
+    api: 'https://starfish-app-kq7kj.ondigitalocean.app/',
 }
 
 export default config;
