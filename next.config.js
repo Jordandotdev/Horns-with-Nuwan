@@ -12,7 +12,7 @@ const nextConfig = {
             },
             {
                 protocol: 'https',
-                hostname: 'nuwan-backend-k4wxw.ondigitalocean.app',
+                hostname: 'starfish-app-kq7kj.ondigitalocean.app'
             },
             {
                 protocol: 'https',
