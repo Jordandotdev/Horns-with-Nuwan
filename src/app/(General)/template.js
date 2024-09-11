@@ -6,7 +6,14 @@ import { LoadAnim } from "../../lib/loadinganim.js";
 export default function Template({ children }) {
   useEffect(() => {
     const delayDuration = 3;
-    LoadAnim(delayDuration);
+    if (window.location.pathname === '/' && localStorage.setItem('visitedBefore', 'true')) {
+      LoadAnim(delayDuration);
+    }else{
+      const loadP = document.getElementById("load");
+      if (loadP){
+        loadP.style.display = "none";
+      }
+    }
   }, []);
 
   return (
