@@ -52,16 +52,17 @@ const ProjectTemp = ({ project }) => {
   return (
     <section className="relative m-2 font-sans leading-normal">
       <div className="bg-white max-h-lg max-w-lg shadow-lg rounded-xl overflow-hidden m-4">
-        <div className="relative bg-gray-800 h-20 sm:18 md:10 rounded-t-lg">
-          {/* <div className="relative h-60 sm:48 md:20 rounded-lg"> */}
-          {/* <Image
+        <div className="relative bg-gray-800 h-20 sm:18 md:10 transition-all duration-500 ease-[cubic-bezier(0.4, 0, 0.2, 1)] hover:h-60 hover:sm:48 hover:md:20 rounded-t-lg">
+          
+          <Image
             className="object-cover w-full h-full"
             fill={true}
             src={displayImage}
             alt={project.attributes.ProjectName}
-          /> */}
+          />
+          
         </div>
-        <div className="px-6 py-4 ">
+        <div className="px-6 py-4">
           <h2 className="mb-2 font-black">{project.attributes.ProjectName}</h2>
           <div className="flex flex-row gap-2 items-center">
             <h3 className="mb-2 text-gold text-md">{projectStartDate}</h3>
